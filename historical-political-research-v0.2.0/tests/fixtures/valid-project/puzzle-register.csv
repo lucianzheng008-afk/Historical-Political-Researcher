@@ -1,0 +1,2 @@
+puzzle_id,observation,expected,observed,theoretical_stake,evidence_status
+PUZ-1,Two similar provinces diverged,Theory expects convergence,Different accountability levels,Scope condition,inference

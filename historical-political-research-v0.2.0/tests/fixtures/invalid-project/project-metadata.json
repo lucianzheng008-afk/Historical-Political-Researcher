@@ -1,0 +1,7 @@
+{
+  "project_id": "HPR-TEST-INVALID",
+  "task": "Overclaim from incomplete evidence",
+  "target_output": "causal conclusion",
+  "language": "en",
+  "uncertainty_policy": "none"
+}

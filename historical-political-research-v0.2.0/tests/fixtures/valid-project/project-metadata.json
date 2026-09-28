@@ -1,0 +1,7 @@
+{
+  "project_id": "HPR-TEST-VALID",
+  "task": "Test a bounded historical mechanism",
+  "target_output": "design memo",
+  "language": "en",
+  "uncertainty_policy": "Separate source-backed claims, inference, and unknowns"
+}

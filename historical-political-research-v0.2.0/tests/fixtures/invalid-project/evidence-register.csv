@@ -1,0 +1,2 @@
+evidence_id,proposition_id,source_ids,status,observation,interpretation,reliability,diagnosticity
+E-1,P-1,SRC-1,found,Search result exists,Proves cultural cause,low,low

@@ -1,0 +1,2 @@
+step_id,mechanism_id,entity,activity,changed_state,timing,necessary,support_status,evidence_ids,disconfirming_observation
+M-1-S1,M-1,provincial elite,coordinates coalition,fragmented to coordinated,before reform,true,supported,E-1,no coordination before decision

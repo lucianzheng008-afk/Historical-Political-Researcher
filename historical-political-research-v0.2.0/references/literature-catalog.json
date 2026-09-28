@@ -1,0 +1,327 @@
+{
+  "schema_version": "1.0",
+  "verified_at": "2026-09-28",
+  "records": [
+    {
+      "id": "CN-FIELD-001", "core": true,
+      "title": "什么是历史政治学？", "authors": ["杨光斌"], "year": 2019,
+      "publication_type": "edited-volume-article", "venue": "中国政治学（2019年第2辑，总第4辑）", "volume": null, "issue": "2019(2)", "pages": "3-21", "doi": null, "isbn": null,
+      "official_url": "https://sis.ruc.edu.cn/docs/2024-05/43979354d67746b28bb9d9ace9274857.pdf", "language": "zh", "tradition": "Chinese historical political science", "domain_tags": ["field-definition", "historical-ontology", "historical-continuity"], "role": "field_foundation",
+      "verification_status": "publisher_metadata", "access_status": "metadata_only", "supports_rule_ids": ["TEMP-SEQUENCE", "THEORY-LOCALITY", "SOURCE-HISTORIOGRAPHY", "REVIEW-CEILING"],
+      "limitations": "The official institutional source confirms the bibliographic record indirectly; exact quotation still requires the cited edition.", "verified_via": ["institutional-publication-record", "journal-citation-cross-check"], "verified_at": "2026-09-28"
+    },
+    {
+      "id": "CN-FIELD-002", "core": true,
+      "title": "以中国为方法的政治学", "authors": ["杨光斌"], "year": 2019,
+      "publication_type": "journal-article", "venue": "中国社会科学", "volume": null, "issue": "10", "pages": "77-97, 204-205", "doi": null, "isbn": null,
+      "official_url": "https://keyan.ruc.edu.cn/wwsy/kyjx/bjszxshkxyjyxcgj/9a0d4635c04844ff92d2a9ca2ee26675.htm", "language": "zh", "tradition": "China as method", "domain_tags": ["theory-locality", "knowledge-subjectivity", "concept-travel"], "role": "field_foundation",
+      "verification_status": "publisher_metadata", "access_status": "metadata_only", "supports_rule_ids": ["THEORY-LOCALITY", "CONCEPT-TRAVEL", "REVIEW-CEILING"],
+      "limitations": "A China-centered starting point does not by itself establish external validity or eliminate comparative tests.", "verified_via": ["university-research-record", "official-reprint-cross-check"], "verified_at": "2026-09-28"
+    },
+    {
+      "id": "CN-EX-001", "core": true,
+      "title": "历史政治学视野下的当代中国政治发展", "authors": ["杨光斌"], "year": 2019,
+      "publication_type": "journal-article", "venue": "政治学研究", "volume": null, "issue": "5", "pages": "1-14, 126", "doi": null, "isbn": null,
+      "official_url": "https://www.cssn.cn/zzx/202302/t20230228_5599679.shtml", "language": "zh", "tradition": "long-duration Chinese political development", "domain_tags": ["contemporary-China", "institutional-development", "historical-continuity"], "role": "exemplar",
+      "verification_status": "publisher_metadata", "access_status": "metadata_only", "supports_rule_ids": ["TEMP-SEQUENCE", "TEMP-PATH", "INST-GRADUAL-CHANGE", "THEORY-LOCALITY"],
+      "limitations": "The catalog record identifies the study; its continuity claims require independent evidence and rival-mechanism tests.", "verified_via": ["official-academic-network-record", "journal-citation-cross-check"], "verified_at": "2026-09-28"
+    },
+    {
+      "id": "CN-FIELD-003", "core": true,
+      "title": "历史政治学的功能分析", "authors": ["杨光斌", "施启鹏"], "year": 2020,
+      "publication_type": "journal-article", "venue": "政治学研究", "volume": null, "issue": "1", "pages": "10-20", "doi": null, "isbn": null,
+      "official_url": "https://zzxyj.ajcass.com/Admin/UploadFile/Issue/pnngqxvb.pdf", "language": "zh", "tradition": "functional analysis", "domain_tags": ["knowledge-function", "good-governance", "legitimacy"], "role": "field_foundation",
+      "verification_status": "full_text", "access_status": "open_full_text", "supports_rule_ids": ["THEORY-LOCALITY", "SOURCE-HISTORIOGRAPHY", "REVIEW-CEILING"],
+      "limitations": "Normative claims about disciplinary function are not empirical proof of any particular historical mechanism.", "verified_via": ["official-journal-pdf"], "verified_at": "2026-09-28"
+    },
+    {
+      "id": "CN-FIELD-004", "core": true,
+      "title": "历史政治学的中国议题", "authors": ["姚中秋"], "year": 2019,
+      "publication_type": "edited-volume-article", "venue": "中国政治学（2019年第2辑，总第4辑）", "volume": null, "issue": "2019(2)", "pages": "22-50", "doi": null, "isbn": null,
+      "official_url": "https://sis.ruc.edu.cn/ch/jzygzw/jxyyjzw/73358e7b72f04f75bb9f2ac7ba420be6.htm", "language": "zh", "tradition": "Chinese state and civilization agenda", "domain_tags": ["research-agenda", "state-form", "civilizational-history"], "role": "field_foundation",
+      "verification_status": "publisher_metadata", "access_status": "metadata_only", "supports_rule_ids": ["CASE-UNIVERSE", "THEORY-LOCALITY", "TEMP-SEQUENCE"],
+      "limitations": "An agenda-setting text defines questions but does not establish the resulting historical explanations.", "verified_via": ["official-university-author-record", "journal-citation-cross-check"], "verified_at": "2026-09-28"
+    },
+    {
+      "id": "CN-DEB-001", "core": true,
+      "title": "中国政治传统研究与历史政治学的可能性", "authors": ["任锋"], "year": 2020,
+      "publication_type": "journal-article", "venue": "学术月刊", "volume": "52", "issue": "1", "pages": "73-83", "doi": null, "isbn": null,
+      "official_url": "https://sis.ruc.edu.cn/ch/jzygzw/jxyyjzw/2b60b5cadd6740debcd75e5c09ce4f40.htm", "language": "zh", "tradition": "Chinese political thought and institutional history", "domain_tags": ["political-tradition", "political-thought", "institutional-history"], "role": "debate",
+      "verification_status": "publisher_metadata", "access_status": "metadata_only", "supports_rule_ids": ["SOURCE-HISTORIOGRAPHY", "THEORY-LOCALITY", "CONCEPT-TRAVEL"],
+      "limitations": "The university author page verifies the bibliographic record but does not provide full text; the article combines programmatic and historiographic argument and should not be treated solely as an executed causal study.", "verified_via": ["author-university-publication-list"], "verified_at": "2026-09-28"
+    },
+    {
+      "id": "CN-METH-001", "core": true,
+      "title": "历史政治学的方法论基础", "authors": ["施启鹏"], "year": 2019,
+      "publication_type": "edited-volume-article", "venue": "中国政治学（2019年第2辑，总第4辑）", "volume": null, "issue": "2019(2)", "pages": "70-98", "doi": null, "isbn": null,
+      "official_url": "https://sird.bfsu.edu.cn/info/1075/3332.htm", "language": "zh", "tradition": "comparative historical analysis", "domain_tags": ["methodology", "comparative-history", "causal-explanation"], "role": "method",
+      "verification_status": "publisher_metadata", "access_status": "metadata_only", "supports_rule_ids": ["TEMP-SEQUENCE", "TEMP-PATH", "MECH-CHAIN", "CASE-CONTROLLED-COMPARISON"],
+      "limitations": "The source frames method foundations; applying them still requires explicit case universes, sequences, rivals, and evidence.", "verified_via": ["official-university-author-record", "bibliographic-database-cross-check"], "verified_at": "2026-09-28"
+    },
+    {
+      "id": "CN-DEB-002", "core": true,
+      "title": "“丰裕的贫困”——对历史政治学比较方法的反思", "authors": ["施启鹏"], "year": 2022,
+      "publication_type": "journal-article", "venue": "探索与争鸣", "volume": null, "issue": "7", "pages": "86-95", "doi": null, "isbn": null,
+      "official_url": "https://www.tsyzm.cn/fileup/1004-2229/NEWS/20220806103524.pdf", "language": "zh", "tradition": "constructivist historical causal narrative", "domain_tags": ["controlled-comparison", "counterfactual-causation", "historical-narrative"], "role": "critique",
+      "verification_status": "full_text", "access_status": "open_full_text", "supports_rule_ids": ["CASE-CONTROLLED-COMPARISON", "MECH-CHAIN", "REVIEW-CEILING"],
+      "limitations": "A methodological critique of controlled comparison is not empirical disproof of every controlled comparison.", "verified_via": ["official-journal-pdf", "official-university-author-record"], "verified_at": "2026-09-28"
+    },
+    {
+      "id": "CN-DEB-003", "core": true,
+      "title": "政治学理论建构中的经验、历史与逻辑——对历史政治学发展的一项阶段性评估", "authors": ["张树平"], "year": 2022,
+      "publication_type": "journal-article", "venue": "政治学研究", "volume": null, "issue": "1", "pages": null, "doi": null, "isbn": null,
+      "official_url": "https://www.sass.org.cn/2022/0329/c5866a451138/page.htm", "language": "zh", "tradition": "critical empirical social science", "domain_tags": ["empirical-foundation", "theory-building", "disciplinary-assessment"], "role": "critique",
+      "verification_status": "publisher_abstract", "access_status": "open_abstract", "supports_rule_ids": ["SOURCE-HISTORIOGRAPHY", "THEORY-LOCALITY", "REVIEW-CEILING"],
+      "limitations": "Only institutional abstract-level access was verified; page-level or detailed argument claims require the article.", "verified_via": ["official-institutional-abstract"], "verified_at": "2026-09-28"
+    },
+    {
+      "id": "CN-METH-002", "core": true,
+      "title": "动态地纳入时间：历史政治学的方法学启示和挑战", "authors": ["吕杰"], "year": 2024,
+      "publication_type": "journal-article", "venue": "教学与研究", "volume": "58", "issue": "4", "pages": "101-112", "doi": null, "isbn": null,
+      "official_url": "https://jxyyj.ruc.edu.cn/CN/lexeme/showArticleByLexeme.do?articleID=16847", "language": "zh", "tradition": "processual causation and dynamic modeling", "domain_tags": ["temporal-boundary", "dynamic-models", "processual-causation"], "role": "method",
+      "verification_status": "full_text", "access_status": "open_full_text", "supports_rule_ids": ["TEMP-SEQUENCE", "TEMP-PATH", "INST-GRADUAL-CHANGE", "MECH-CHAIN"],
+      "limitations": "The article identifies method-tool matches; it does not imply every historical question is identifiable with existing dynamic models.", "verified_via": ["official-journal-page", "official-journal-pdf"], "verified_at": "2026-09-28"
+    },
+    {
+      "id": "CN-EX-002", "core": true,
+      "title": "历史政治学视角下的血缘道德王国——以周王朝的政治理想与悖论为例", "authors": ["徐勇", "杨海龙"], "year": 2019,
+      "publication_type": "journal-article", "venue": "云南社会科学", "volume": null, "issue": "4", "pages": null, "doi": null, "isbn": null,
+      "official_url": "https://www.sky.yn.gov.cn/cbkw/ynshkx/02352801007304534470", "language": "zh", "tradition": "historical political analysis of early state formation", "domain_tags": ["Zhou-dynasty", "kinship", "state-formation", "political-ideals"], "role": "exemplar",
+      "verification_status": "publisher_abstract", "access_status": "open_abstract", "supports_rule_ids": ["TEMP-SEQUENCE", "CONCEPT-TRAVEL", "SOURCE-HISTORIOGRAPHY", "THEORY-LOCALITY"],
+      "limitations": "Conflicting page ranges were found, so pages remain null; transfer requires independent source and concept checks.", "verified_via": ["official-journal-abstract", "university-author-record"], "verified_at": "2026-09-28"
+    },
+    {
+      "id": "CN-EX-003", "core": true,
+      "title": "中国共产党领导制度的历史政治学分析", "authors": ["汪仕凯"], "year": 2020,
+      "publication_type": "journal-article", "venue": "中国人民大学学报", "volume": "34", "issue": "1", "pages": "28-38", "doi": null, "isbn": null,
+      "official_url": "https://xuebao.ruc.edu.cn/CN/Y2020/V34/I1/28", "language": "zh", "tradition": "historical institutional analysis of party leadership", "domain_tags": ["Communist-Party-of-China", "leadership-system", "institutional-formation"], "role": "exemplar",
+      "verification_status": "full_text", "access_status": "open_full_text", "supports_rule_ids": ["TEMP-SEQUENCE", "TEMP-PATH", "INST-GRADUAL-CHANGE", "MECH-CHAIN"],
+      "limitations": "The official journal record identifies Wang Shikai, not the misattributed name found in a secondary citation.", "verified_via": ["official-journal-page", "official-journal-pdf"], "verified_at": "2026-09-28"
+    },
+    {
+      "id": "CN-EX-004", "core": true,
+      "title": "中国政治经济体制的历史连续性：从厚生主义传统到社会主义市场经济体制", "authors": ["姚中秋"], "year": 2022,
+      "publication_type": "edited-volume-article", "venue": "中国政治学（2022年第2辑）", "volume": null, "issue": "2022(2)", "pages": null, "doi": null, "isbn": null,
+      "official_url": "https://sis.ruc.edu.cn/docs/2024-05/226c72d3e1874fad91dd0ff838b4f787.pdf", "language": "zh", "tradition": "historical continuity in Chinese political economy", "domain_tags": ["political-economy", "historical-continuity", "socialist-market-economy"], "role": "exemplar",
+      "verification_status": "full_text", "access_status": "open_full_text", "supports_rule_ids": ["TEMP-SEQUENCE", "TEMP-PATH", "CONCEPT-TRAVEL", "THEORY-LOCALITY", "REVIEW-CEILING"],
+      "limitations": "Structural similarity and claims of historical continuity still require independent process evidence and tests against competing explanations.", "verified_via": ["official-ruc-pdf"], "verified_at": "2026-09-28"
+    },
+
+    {
+      "id": "METH-CHA-001", "core": true,
+      "title": "Comparative Historical Analysis in the Social Sciences", "authors": ["James Mahoney", "Dietrich Rueschemeyer"], "year": 2003,
+      "publication_type": "edited-book", "venue": "Cambridge University Press", "volume": null, "issue": null, "pages": null, "doi": "10.1017/CBO9780511803963", "isbn": "9780511803963",
+      "official_url": "https://www.cambridge.org/core/books/comparative-historical-analysis-in-the-social-sciences/0654B5F390778FCD909E4A06318BFAFF/listing", "language": "en", "tradition": "comparative historical analysis", "domain_tags": ["causal-inference", "historical-sequence", "case-comparison"], "role": "field_foundation",
+      "verification_status": "publisher_metadata", "access_status": "needs_institution", "supports_rule_ids": ["PUZ-EXPECTATION", "TEMP-SEQUENCE", "CASE-UNIVERSE", "CASE-CONTROLLED-COMPARISON", "THEORY-LOCALITY", "REVIEW-CEILING"],
+      "limitations": "The named authors are editors; individual chapters may support different or competing methodological claims.", "verified_via": ["publisher-page", "crossref-doi"], "verified_at": "2026-09-28"
+    },
+    {
+      "id": "METH-TEMP-001", "core": true,
+      "title": "Increasing Returns, Path Dependence, and the Study of Politics", "authors": ["Paul Pierson"], "year": 2000,
+      "publication_type": "journal-article", "venue": "American Political Science Review", "volume": "94", "issue": "2", "pages": "251-267", "doi": "10.2307/2586011", "isbn": null,
+      "official_url": "https://www.cambridge.org/core/journals/american-political-science-review/article/increasing-returns-path-dependence-and-the-study-of-politics/AC2137B913363E33D97FC5CEC17CC75D", "language": "en", "tradition": "historical institutionalism", "domain_tags": ["path-dependence", "increasing-returns", "temporality"], "role": "method",
+      "verification_status": "publisher_abstract", "access_status": "open_abstract", "supports_rule_ids": ["TEMP-PATH", "TEMP-SEQUENCE"],
+      "limitations": "Increasing returns is one path-dependent mechanism; persistence alone does not establish it.", "verified_via": ["publisher-page", "doi", "crossref", "openalex"], "verified_at": "2026-09-28"
+    },
+    {
+      "id": "METH-TEMP-002", "core": true,
+      "title": "Taking Temporality Seriously: Modeling History and the Use of Narratives as Evidence", "authors": ["Tim Büthe"], "year": 2002,
+      "publication_type": "journal-article", "venue": "American Political Science Review", "volume": "96", "issue": "3", "pages": "481-493", "doi": "10.1017/S0003055402000278", "isbn": null,
+      "official_url": "https://doi.org/10.1017/S0003055402000278", "language": "en", "tradition": "temporal causal analysis", "domain_tags": ["temporality", "narrative-evidence", "sequence"], "role": "method",
+      "verification_status": "publisher_abstract", "access_status": "needs_institution", "supports_rule_ids": ["TEMP-SEQUENCE", "MECH-CHAIN", "REVIEW-CEILING"],
+      "limitations": "Narrative evidence must be connected to an explicit temporal model and rival explanations.", "verified_via": ["crossref-doi", "openalex-access-check"], "verified_at": "2026-09-28"
+    },
+    {
+      "id": "METH-TEMP-003", "core": true,
+      "title": "Time Will Tell? Temporality and the Analysis of Causal Mechanisms and Processes", "authors": ["Anna Grzymala-Busse"], "year": 2011,
+      "publication_type": "journal-article", "venue": "Comparative Political Studies", "volume": "44", "issue": "9", "pages": "1267-1297", "doi": "10.1177/0010414010390653", "isbn": null,
+      "official_url": "https://doi.org/10.1177/0010414010390653", "language": "en", "tradition": "comparative historical analysis", "domain_tags": ["temporality", "causal-mechanisms", "processes"], "role": "method",
+      "verification_status": "publisher_abstract", "access_status": "needs_institution", "supports_rule_ids": ["TEMP-SEQUENCE", "MECH-CHAIN", "REVIEW-CEILING"],
+      "limitations": "The record uses the 2011 print year; online-first timing should not be mistaken for a distinct work.", "verified_via": ["crossref-doi", "openalex-access-check"], "verified_at": "2026-09-28"
+    },
+    {
+      "id": "METH-TEMP-004", "core": true,
+      "title": "The Study of Critical Junctures: Theory, Narrative, and Counterfactuals in Historical Institutionalism", "authors": ["Giovanni Capoccia", "R. Daniel Kelemen"], "year": 2007,
+      "publication_type": "journal-article", "venue": "World Politics", "volume": "59", "issue": "3", "pages": "341-369", "doi": "10.1017/S0043887100020852", "isbn": null,
+      "official_url": "https://doi.org/10.1017/S0043887100020852", "language": "en", "tradition": "historical institutionalism", "domain_tags": ["critical-juncture", "counterfactual", "path-dependence"], "role": "method",
+      "verification_status": "publisher_abstract", "access_status": "needs_institution", "supports_rule_ids": ["TEMP-CRITICAL-JUNCTURE", "TEMP-PATH", "TEMP-SEQUENCE"],
+      "limitations": "A critical-juncture claim still requires feasible alternatives, a selection event, and demonstrated reproduction.", "verified_via": ["crossref-doi", "openalex-access-check"], "verified_at": "2026-09-28"
+    },
+    {
+      "id": "METH-MECH-001", "core": true,
+      "title": "Context and Causal Mechanisms in Political Analysis", "authors": ["Tulia G. Falleti", "Julia F. Lynch"], "year": 2009,
+      "publication_type": "journal-article", "venue": "Comparative Political Studies", "volume": "42", "issue": "9", "pages": "1143-1166", "doi": "10.1177/0010414009331724", "isbn": null,
+      "official_url": "https://doi.org/10.1177/0010414009331724", "language": "en", "tradition": "contextual causal analysis", "domain_tags": ["causal-mechanisms", "context", "scope-conditions"], "role": "method",
+      "verification_status": "publisher_abstract", "access_status": "needs_institution", "supports_rule_ids": ["MECH-CHAIN", "TEMP-SEQUENCE", "THEORY-LOCALITY", "REVIEW-CEILING"],
+      "limitations": "Context labels cannot substitute for operationalizing entities, activities, and state changes.", "verified_via": ["crossref-doi", "openalex-access-check"], "verified_at": "2026-09-28"
+    },
+    {
+      "id": "METH-PT-001", "core": true,
+      "title": "Understanding Process Tracing", "authors": ["David Collier"], "year": 2011,
+      "publication_type": "journal-article", "venue": "PS: Political Science & Politics", "volume": "44", "issue": "4", "pages": "823-830", "doi": "10.1017/S1049096511001429", "isbn": null,
+      "official_url": "https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/understanding-process-tracing/183A057AD6A36783E678CB37440346D1", "language": "en", "tradition": "process tracing", "domain_tags": ["diagnostic-evidence", "within-case-analysis", "causal-inference"], "role": "method",
+      "verification_status": "full_text", "access_status": "open_full_text", "supports_rule_ids": ["MECH-CHAIN", "EVID-BAYES", "REVIEW-CEILING"],
+      "limitations": "Evidence-test labels do not replace analysis of evidence generation and alternative explanations.", "verified_via": ["publisher-page", "crossref-doi", "openalex-access-check"], "verified_at": "2026-09-28"
+    },
+    {
+      "id": "METH-PT-002", "core": true,
+      "title": "The Logic of Process Tracing Tests in the Social Sciences", "authors": ["James Mahoney"], "year": 2012,
+      "publication_type": "journal-article", "venue": "Sociological Methods & Research", "volume": "41", "issue": "4", "pages": "570-597", "doi": "10.1177/0049124112437709", "isbn": null,
+      "official_url": "https://doi.org/10.1177/0049124112437709", "language": "en", "tradition": "process tracing", "domain_tags": ["causal-tests", "Bayesian-logic", "within-case-inference"], "role": "method",
+      "verification_status": "publisher_abstract", "access_status": "needs_institution", "supports_rule_ids": ["MECH-CHAIN", "EVID-BAYES", "REVIEW-CEILING"],
+      "limitations": "Test strength depends on relative evidentiary likelihoods under specified hypotheses, not mechanical labels.", "verified_via": ["crossref-doi", "openalex-access-check"], "verified_at": "2026-09-28"
+    },
+    {
+      "id": "METH-PT-003", "core": true,
+      "title": "Explicit Bayesian Analysis for Process Tracing: Guidelines, Opportunities, and Caveats", "authors": ["Tasha Fairfield", "Andrew E. Charman"], "year": 2017,
+      "publication_type": "journal-article", "venue": "Political Analysis", "volume": "25", "issue": "3", "pages": "363-380", "doi": "10.1017/pan.2017.14", "isbn": null,
+      "official_url": "https://doi.org/10.1017/pan.2017.14", "language": "en", "tradition": "Bayesian process tracing", "domain_tags": ["Bayesian-inference", "likelihood-ratio", "sensitivity-analysis"], "role": "method",
+      "verification_status": "full_text", "access_status": "open_full_text", "supports_rule_ids": ["EVID-BAYES", "MECH-CHAIN", "REVIEW-CEILING"],
+      "limitations": "Numerical priors and likelihoods require transparent justification and sensitivity analysis.", "verified_via": ["crossref-doi", "openalex-access-check"], "verified_at": "2026-09-28"
+    },
+    {
+      "id": "METH-CASE-001", "core": true,
+      "title": "Case Selection Techniques in Case Study Research", "authors": ["Jason Seawright", "John Gerring"], "year": 2008,
+      "publication_type": "journal-article", "venue": "Political Research Quarterly", "volume": "61", "issue": "2", "pages": "294-308", "doi": "10.1177/1065912907313077", "isbn": null,
+      "official_url": "https://doi.org/10.1177/1065912907313077", "language": "en", "tradition": "case-study methodology", "domain_tags": ["case-selection", "typical-case", "deviant-case", "crucial-case"], "role": "method",
+      "verification_status": "publisher_abstract", "access_status": "needs_institution", "supports_rule_ids": ["CASE-UNIVERSE", "CASE-CONTROLLED-COMPARISON", "REVIEW-CEILING"],
+      "limitations": "Case types are roles relative to a defined population and inferential goal, not intrinsic case properties.", "verified_via": ["crossref-doi", "openalex-access-check"], "verified_at": "2026-09-28"
+    },
+    {
+      "id": "METH-CASE-002", "core": true,
+      "title": "The Enduring Indispensability of the Controlled Comparison", "authors": ["Dan Slater", "Daniel Ziblatt"], "year": 2013,
+      "publication_type": "journal-article", "venue": "Comparative Political Studies", "volume": "46", "issue": "10", "pages": "1301-1327", "doi": "10.1177/0010414012472469", "isbn": null,
+      "official_url": "https://doi.org/10.1177/0010414012472469", "language": "en", "tradition": "comparative historical analysis", "domain_tags": ["controlled-comparison", "case-comparison", "comparative-history"], "role": "debate",
+      "verification_status": "publisher_abstract", "access_status": "needs_institution", "supports_rule_ids": ["CASE-UNIVERSE", "CASE-CONTROLLED-COMPARISON", "REVIEW-CEILING"],
+      "limitations": "Controlled comparison cannot automatically remove unobserved differences, interdependence, or unequal source survival.", "verified_via": ["crossref-doi", "openalex-access-check"], "verified_at": "2026-09-28"
+    },
+    {
+      "id": "METH-CASE-003", "core": true,
+      "title": "Nested Analysis as a Mixed-Method Strategy for Comparative Research", "authors": ["Evan S. Lieberman"], "year": 2005,
+      "publication_type": "journal-article", "venue": "American Political Science Review", "volume": "99", "issue": "3", "pages": "435-452", "doi": "10.1017/S0003055405051762", "isbn": null,
+      "official_url": "https://doi.org/10.1017/S0003055405051762", "language": "en", "tradition": "nested mixed methods", "domain_tags": ["nested-analysis", "mixed-methods", "population-inference"], "role": "method",
+      "verification_status": "publisher_abstract", "access_status": "needs_institution", "supports_rule_ids": ["CASE-UNIVERSE", "CASE-CONTROLLED-COMPARISON", "MECH-CHAIN", "REVIEW-CEILING"],
+      "limitations": "Population associations do not prove case mechanisms, and case processes do not alone prove population generality.", "verified_via": ["crossref-doi", "openalex-access-check"], "verified_at": "2026-09-28"
+    },
+    {
+      "id": "METH-CONCEPT-001", "core": true,
+      "title": "Concept Misformation in Comparative Politics", "authors": ["Giovanni Sartori"], "year": 1970,
+      "publication_type": "journal-article", "venue": "American Political Science Review", "volume": "64", "issue": "4", "pages": "1033-1053", "doi": "10.2307/1958356", "isbn": null,
+      "official_url": "https://doi.org/10.2307/1958356", "language": "en", "tradition": "comparative concept formation", "domain_tags": ["concept-formation", "conceptual-stretching", "classification"], "role": "field_foundation",
+      "verification_status": "publisher_abstract", "access_status": "needs_institution", "supports_rule_ids": ["CONCEPT-TRAVEL", "MEASURE-VALIDITY", "THEORY-LOCALITY"],
+      "limitations": "The ladder of abstraction is not an automatic repair; attributes, boundaries, and historical meanings remain to be tested.", "verified_via": ["crossref-doi", "openalex-access-check"], "verified_at": "2026-09-28"
+    },
+    {
+      "id": "METH-CONCEPT-002", "core": true,
+      "title": "Conceptual ‘Stretching’ Revisited: Adapting Categories in Comparative Analysis", "authors": ["David Collier", "James E. Mahon Jr."], "year": 1993,
+      "publication_type": "journal-article", "venue": "American Political Science Review", "volume": "87", "issue": "4", "pages": "845-855", "doi": "10.2307/2938818", "isbn": null,
+      "official_url": "https://doi.org/10.2307/2938818", "language": "en", "tradition": "comparative concept formation", "domain_tags": ["conceptual-stretching", "radial-categories", "family-resemblance"], "role": "debate",
+      "verification_status": "publisher_metadata", "access_status": "open_full_text", "supports_rule_ids": ["CONCEPT-TRAVEL", "MEASURE-VALIDITY", "THEORY-LOCALITY"],
+      "limitations": "Category adaptation needs explicit membership rules; family resemblance cannot silently expand the extension.", "verified_via": ["crossref-doi", "openalex-access-check"], "verified_at": "2026-09-28"
+    },
+    {
+      "id": "METH-MEASURE-001", "core": true,
+      "title": "Measurement Validity: A Shared Standard for Qualitative and Quantitative Research", "authors": ["Robert Adcock", "David Collier"], "year": 2001,
+      "publication_type": "journal-article", "venue": "American Political Science Review", "volume": "95", "issue": "3", "pages": "529-546", "doi": "10.1017/S0003055401003100", "isbn": null,
+      "official_url": "https://doi.org/10.1017/S0003055401003100", "language": "en", "tradition": "conceptualization and measurement", "domain_tags": ["measurement-validity", "conceptualization", "indicators"], "role": "field_foundation",
+      "verification_status": "publisher_metadata", "access_status": "open_full_text", "supports_rule_ids": ["MEASURE-VALIDITY", "CONCEPT-TRAVEL", "REVIEW-CEILING"],
+      "limitations": "The measurement chain must be implemented with explicit concepts, indicators, and coding rules.", "verified_via": ["crossref-doi", "openalex-access-check"], "verified_at": "2026-09-28"
+    },
+    {
+      "id": "METH-SOURCE-001", "core": true,
+      "title": "History, Historiography, and Political Science: Multiple Historical Records and the Problem of Selection Bias", "authors": ["Ian S. Lustick"], "year": 1996,
+      "publication_type": "journal-article", "venue": "American Political Science Review", "volume": "90", "issue": "3", "pages": "605-618", "doi": "10.2307/2082612", "isbn": null,
+      "official_url": "https://doi.org/10.2307/2082612", "language": "en", "tradition": "historiography and source criticism", "domain_tags": ["historiography", "selection-bias", "historical-records"], "role": "critique",
+      "verification_status": "publisher_abstract", "access_status": "needs_institution", "supports_rule_ids": ["SOURCE-HISTORIOGRAPHY", "SOURCE-SILENCE", "THEORY-LOCALITY", "REVIEW-CEILING"],
+      "limitations": "Multiple historical records require source-selection auditing, not equal weighting of all narratives.", "verified_via": ["crossref-doi", "openalex-access-check"], "verified_at": "2026-09-28"
+    },
+    {
+      "id": "METH-SOURCE-002", "core": true,
+      "title": "The Ulysses Principle: A Criterial Framework for Reducing Bias When Enlisting the Work of Historians", "authors": ["Jørgen Møller", "Svend-Erik Skaaning"], "year": 2021,
+      "publication_type": "journal-article", "venue": "Sociological Methods & Research", "volume": "50", "issue": "1", "pages": "103-134", "doi": "10.1177/0049124118769107", "isbn": null,
+      "official_url": "https://pure.au.dk/portal/en/publications/the-ulysses-principle-a-criterial-framework-for-reducing-bias-whe/", "language": "en", "tradition": "historiography and source criticism", "domain_tags": ["historical-evidence", "selection-bias", "source-updating"], "role": "method",
+      "verification_status": "full_text", "access_status": "open_full_text", "supports_rule_ids": ["SOURCE-HISTORIOGRAPHY", "THEORY-LOCALITY", "MEASURE-VALIDITY", "REVIEW-CEILING"],
+      "limitations": "The 2018 online-first date and 2021 issue date refer to one work; the open copy is an accepted manuscript.", "verified_via": ["crossref-doi", "institutional-repository"], "verified_at": "2026-09-28"
+    },
+    {
+      "id": "METH-SOURCE-003", "core": true,
+      "title": "Feet of Clay? How to Review Political Science Papers that Make Use of the Work of Historians", "authors": ["Jørgen Møller"], "year": 2020,
+      "publication_type": "journal-article", "venue": "PS: Political Science & Politics", "volume": "53", "issue": "2", "pages": "253-257", "doi": "10.1017/S1049096519001586", "isbn": null,
+      "official_url": "https://doi.org/10.1017/S1049096519001586", "language": "en", "tradition": "historical-source review", "domain_tags": ["peer-review", "historical-evidence", "source-audit"], "role": "critique",
+      "verification_status": "publisher_abstract", "access_status": "open_abstract", "supports_rule_ids": ["SOURCE-HISTORIOGRAPHY", "THEORY-LOCALITY", "REVIEW-CEILING"],
+      "limitations": "The review criteria are screening tools, not substitutes for source criticism or historiographic training.", "verified_via": ["publisher-page", "crossref-doi", "openalex-access-check"], "verified_at": "2026-09-28"
+    },
+    {
+      "id": "EX-IR-001", "core": false,
+      "title": "The Nuclear Taboo: The United States and the Normative Basis of Nuclear Non-Use", "authors": ["Nina Tannenwald"], "year": 1999,
+      "publication_type": "journal-article", "venue": "International Organization", "volume": "53", "issue": "3", "pages": "433-468", "doi": "10.1162/002081899550959", "isbn": null,
+      "official_url": "https://www.cambridge.org/core/journals/international-organization/article/nuclear-taboo-the-united-states-and-the-normative-basis-of-nuclear-nonuse/EA04E0104A42C12FC785A70F301197CC", "language": "en", "tradition": "constructivist historical international relations", "domain_tags": ["nuclear-non-use", "international-norms", "security-studies"], "role": "exemplar",
+      "verification_status": "publisher_metadata", "access_status": "open_full_text", "supports_rule_ids": ["PUZ-EXPECTATION", "TEMP-SEQUENCE", "MECH-CHAIN", "SOURCE-HISTORIOGRAPHY", "REVIEW-CEILING"],
+      "limitations": "The publisher page exposes an extract; repository services report bronze full text, but page-level claims still require opening the relevant version.", "verified_via": ["publisher-page", "crossref-doi", "openalex", "unpaywall"], "verified_at": "2026-09-28"
+    },
+    {
+      "id": "EX-COMP-001", "core": false,
+      "title": "Does Landholding Inequality Block Democratization?: A Test of the ‘Bread and Democracy’ Thesis and the Case of Prussia", "authors": ["Daniel Ziblatt"], "year": 2008,
+      "publication_type": "journal-article", "venue": "World Politics", "volume": "60", "issue": "4", "pages": "610-641", "doi": "10.1353/wp.0.0021", "isbn": null,
+      "official_url": "https://www.cambridge.org/core/journals/world-politics/article/does-landholding-inequality-block-democratization-a-test-of-the-bread-and-democracy-thesis-and-the-case-of-prussia/D290EC76C2B223FFC0D00F1D9F45880E", "language": "en", "tradition": "historical institutionalism with micro-level quantitative analysis", "domain_tags": ["democratization", "landholding-inequality", "Prussia", "roll-call-voting"], "role": "exemplar",
+      "verification_status": "publisher_abstract", "access_status": "needs_institution", "supports_rule_ids": ["PUZ-EXPECTATION", "MECH-CHAIN", "MEASURE-VALIDITY", "REVIEW-CEILING"],
+      "limitations": "A single crucial historical case does not itself establish a general case universe or controlled comparison.", "verified_via": ["publisher-page", "crossref-doi", "openalex", "unpaywall"], "verified_at": "2026-09-28"
+    },
+    {
+      "id": "EX-COMP-002", "core": false,
+      "title": "When Distance Mattered: Geographic Scale and the Development of European Representative Assemblies", "authors": ["David Stasavage"], "year": 2010,
+      "publication_type": "journal-article", "venue": "American Political Science Review", "volume": "104", "issue": "4", "pages": "625-643", "doi": "10.1017/S0003055410000444", "isbn": null,
+      "official_url": "https://www.cambridge.org/core/journals/american-political-science-review/article/when-distance-mattered-geographic-scale-and-the-development-of-european-representative-assemblies/C2976BE08D56CFA706FA4BEC674700B7", "language": "en", "tradition": "quantitative comparative historical analysis", "domain_tags": ["representative-assemblies", "European-state-formation", "geographic-scale", "historical-GIS"], "role": "exemplar",
+      "verification_status": "full_text", "access_status": "open_full_text", "supports_rule_ids": ["PUZ-EXPECTATION", "TEMP-SEQUENCE", "MECH-CHAIN", "CASE-UNIVERSE", "MEASURE-VALIDITY", "CONCEPT-TRAVEL", "REVIEW-CEILING"],
+      "limitations": "Official read-only shared access may be transient; page-specific use must verify the stable version.", "verified_via": ["publisher-page", "crossref-doi", "openalex", "unpaywall"], "verified_at": "2026-09-28"
+    },
+    {
+      "id": "METH-AGENDA-001", "core": false,
+      "title": "The Historical Turn in Democratization Studies: A New Research Agenda for Europe and Beyond", "authors": ["Giovanni Capoccia", "Daniel Ziblatt"], "year": 2010,
+      "publication_type": "journal-article", "venue": "Comparative Political Studies", "volume": "43", "issue": "8-9", "pages": "931-968", "doi": "10.1177/0010414010370431", "isbn": null,
+      "official_url": "https://journals.sagepub.com/doi/10.1177/0010414010370431", "language": "en", "tradition": "historical institutionalism and comparative historical methodology", "domain_tags": ["democratization", "institutional-development", "critical-junctures"], "role": "method",
+      "verification_status": "publisher_abstract", "access_status": "needs_institution", "supports_rule_ids": ["TEMP-SEQUENCE", "TEMP-CRITICAL-JUNCTURE", "INST-GRADUAL-CHANGE", "CASE-UNIVERSE", "CONCEPT-TRAVEL", "SOURCE-HISTORIOGRAPHY", "REVIEW-CEILING"],
+      "limitations": "This agenda-setting article does not independently demonstrate every rule associated with the historical turn.", "verified_via": ["publisher-page", "crossref-doi", "openalex", "unpaywall"], "verified_at": "2026-09-28"
+    },
+    {
+      "id": "EX-COMP-003", "core": false,
+      "title": "States and Social Revolutions", "authors": ["Theda Skocpol"], "year": 1979,
+      "publication_type": "book", "venue": "Cambridge University Press", "volume": null, "issue": null, "pages": null, "doi": "10.1017/CBO9780511815805", "isbn": "9780511815805",
+      "official_url": "https://www.cambridge.org/core/books/states-and-social-revolutions/9481262B2BDA1BFFB3C9218DBD447190", "language": "en", "tradition": "comparative historical sociology", "domain_tags": ["social-revolutions", "state-autonomy", "class-relations", "international-pressures"], "role": "exemplar",
+      "verification_status": "publisher_metadata", "access_status": "needs_institution", "supports_rule_ids": ["TEMP-SEQUENCE", "MECH-CHAIN", "CASE-CONTROLLED-COMPARISON", "CONCEPT-TRAVEL", "SOURCE-HISTORIOGRAPHY", "REVIEW-CEILING"],
+      "limitations": "The digital ISBN is edition-specific, and publisher metadata alone does not reconstruct the full case-selection universe.", "verified_via": ["publisher-page", "crossref-doi", "openalex", "unpaywall"], "verified_at": "2026-09-28"
+    },
+    {
+      "id": "EX-COMP-004", "core": false,
+      "title": "Shaping the Political Arena: Critical Junctures, the Labor Movement, and Regime Dynamics in Latin America", "authors": ["Ruth Berins Collier", "David Collier"], "year": 2002,
+      "publication_type": "book", "venue": "University of Notre Dame Press", "volume": null, "issue": null, "pages": "900", "doi": null, "isbn": "9780268017729",
+      "official_url": "https://undpress.nd.edu/9780268017729/shaping-the-political-arena/", "language": "en", "tradition": "comparative historical institutionalism", "domain_tags": ["critical-junctures", "labor-incorporation", "regime-dynamics", "Latin-America"], "role": "exemplar",
+      "verification_status": "publisher_metadata", "access_status": "metadata_only", "supports_rule_ids": ["TEMP-SEQUENCE", "TEMP-PATH", "TEMP-CRITICAL-JUNCTURE", "MECH-CHAIN", "CASE-UNIVERSE", "CASE-CONTROLLED-COMPARISON", "SOURCE-HISTORIOGRAPHY", "REVIEW-CEILING"],
+      "limitations": "This is the official 2002 Notre Dame Press reprint; do not merge its pagination with the 1991 Princeton edition.", "verified_via": ["publisher-page", "bibliographic-cross-check"], "verified_at": "2026-09-28"
+    },
+    {
+      "id": "EX-COMP-005", "core": false,
+      "title": "Ordering Power: Contentious Politics and Authoritarian Leviathans in Southeast Asia", "authors": ["Dan Slater"], "year": 2010,
+      "publication_type": "book", "venue": "Cambridge University Press", "volume": null, "issue": null, "pages": null, "doi": "10.1017/CBO9780511760891", "isbn": "9780511760891",
+      "official_url": "https://www.cambridge.org/core/books/ordering-power/47763F233CA1C3777D085699A4A9FA51", "language": "en", "tradition": "comparative historical analysis", "domain_tags": ["authoritarian-durability", "state-capacity", "contentious-politics", "Southeast-Asia"], "role": "exemplar",
+      "verification_status": "publisher_metadata", "access_status": "needs_institution", "supports_rule_ids": ["PUZ-EXPECTATION", "TEMP-SEQUENCE", "TEMP-PATH", "MECH-CHAIN", "CASE-UNIVERSE", "CASE-CONTROLLED-COMPARISON", "CONCEPT-TRAVEL", "REVIEW-CEILING"],
+      "limitations": "Publisher metadata confirms the comparative scope, not every within-case evidentiary claim.", "verified_via": ["publisher-page", "crossref-doi", "openalex", "unpaywall"], "verified_at": "2026-09-28"
+    },
+    {
+      "id": "EX-COMP-006", "core": false,
+      "title": "Race and Regionalism in the Politics of Taxation in Brazil and South Africa", "authors": ["Evan S. Lieberman"], "year": 2003,
+      "publication_type": "book", "venue": "Cambridge University Press", "volume": null, "issue": null, "pages": null, "doi": "10.1017/CBO9780511615658", "isbn": "9780511615658",
+      "official_url": "https://www.cambridge.org/core/books/race-and-regionalism-in-the-politics-of-taxation-in-brazil-and-south-africa/68F3FE8AD397029ED331A9E0C250FB0E", "language": "en", "tradition": "comparative historical institutionalism with mixed methods", "domain_tags": ["taxation", "state-capacity", "race", "regionalism"], "role": "exemplar",
+      "verification_status": "publisher_metadata", "access_status": "needs_institution", "supports_rule_ids": ["TEMP-SEQUENCE", "TEMP-PATH", "TEMP-CRITICAL-JUNCTURE", "MECH-CHAIN", "CASE-CONTROLLED-COMPARISON", "CONCEPT-TRAVEL", "MEASURE-VALIDITY", "SOURCE-HISTORIOGRAPHY", "REVIEW-CEILING"],
+      "limitations": "Publisher metadata names source families but cannot support a source-dependence audit or page-specific claims.", "verified_via": ["publisher-page", "crossref-doi", "openalex", "unpaywall"], "verified_at": "2026-09-28"
+    },
+    {
+      "id": "EX-COMP-007", "core": false,
+      "title": "Rebuilding Leviathan: Party Competition and State Exploitation in Post-Communist Democracies", "authors": ["Anna Grzymala-Busse"], "year": 2007,
+      "publication_type": "book", "venue": "Cambridge University Press", "volume": null, "issue": null, "pages": null, "doi": "10.1017/CBO9780511618819", "isbn": "9780511618819",
+      "official_url": "https://www.cambridge.org/core/books/rebuilding-leviathan/1E7ED3A562E8D10FD3AA0D6395C8A4FE", "language": "en", "tradition": "comparative historical institutionalism", "domain_tags": ["party-competition", "state-building", "post-communist-democracies"], "role": "exemplar",
+      "verification_status": "publisher_metadata", "access_status": "needs_institution", "supports_rule_ids": ["PUZ-EXPECTATION", "MECH-CHAIN", "CASE-UNIVERSE", "CASE-CONTROLLED-COMPARISON", "CONCEPT-TRAVEL", "MEASURE-VALIDITY", "REVIEW-CEILING"],
+      "limitations": "Publisher metadata confirms nine-country coverage but not equivalent evidence quality across cases.", "verified_via": ["publisher-page", "crossref-doi", "openalex", "unpaywall"], "verified_at": "2026-09-28"
+    }
+  ]
+}

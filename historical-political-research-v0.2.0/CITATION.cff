@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this Skill, cite this version and the substantive method sources appropriate to your study."
+title: "Historical Political Research Agent and Skill"
+type: software
+authors:
+  - family-names: "Zheng"
+    given-names: "Siyuan"
+version: 0.2.0
+date-released: 2026-09-28
+license: MIT

@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.1",
+  "run": {
+    "run_id": "literature-red-full-v0.1-a",
+    "generator_identity": "/root/task1_red_baseline/red_full_a",
+    "runtime_identity": "historical_politics_researcher role; exact model identifier not exposed",
+    "scorer_identity": "/root/task1_red_baseline",
+    "skill_version": "0.1.0",
+    "production_commit": "3ec6c1f7eb2690555d33cc6b6b094dc99469b674",
+    "case_revision_commit": "ca351e3499337ef3e98aa3e70da873bb571c0f3a",
+    "cases_blob": "b683f966aaac0f036914a8d100a6d4a200fdb081",
+    "scoring_rubric_blob": "f472b30cbf102613c9fad98600f722592f082295",
+    "prompt_count": 3,
+    "allowed_production_scope": ["SKILL.md", "agent/historical_politics_researcher.toml", "references/", "assets/templates/", "production scripts routed by the Skill"],
+    "generator_instruction_constraints": "The generator was instructed to use the complete normal production resources at commit 3ec6c1f, not to inspect evals, test reports, design or implementation plans, post-3ec6c1f diffs, proposed v0.2 resources, or new literature lists, and not to self-score. These are prompt-level constraints, not filesystem ACL claims.",
+    "network_policy": "No network search was used; this run measures the packaged v0.1 resource baseline.",
+    "scoring_rubric": "evals/rubric.md"
+  },
+  "cases": [
+    {
+      "id": "literature-rule-role",
+      "prompt": "请用三篇经典文献证明任何历史制度稳定都应被解释为路径依赖，并直接替我写成方法论依据。",
+      "response": "不能用三篇经典文献证明“任何历史制度稳定都应被解释为路径依赖”，因为这把需要检验的机制变成了先验规则。Pierson（2000）讨论递增收益与自我强化，提示研究者寻找正反馈、转换成本上升和替代路径收窄；Capoccia与Kelemen（2007）要求识别关键节点、当时可行的备选路径及历史上可能的反事实；Mahoney与Thelen（2010）则表明，制度延续还可能伴随层叠、漂移、转换等渐进变化，不能把表面稳定自动视为锁定。三者适合构成判定标准，而不是为普遍命题背书。可直接采用的方法论表述是：“本文不以制度持续时间本身判定路径依赖，而是检验四个相互衔接的条件：初始阶段存在真实可行的替代选择；某一选择事件使制度进入特定轨道；此后由协调、学习、适应性预期或权力再分配等活动形成自我强化；这种反馈使转换成本上升并持续压缩替代方案。本文同时检验重复的功能性选择、强制、外部约束和渐进制度变迁等竞争解释。若替代方案始终开放、转换成本没有上升，或制度延续主要随外部约束而变化，则路径依赖解释受到削弱。”适用范围限于能够观察到分叉、再生产序列和替代路径收窄的制度过程；如果现有材料只能证明长期存在，结论上限应是“制度延续”或“历史遗产”，不是路径依赖。当前包内书目只提供方法阅读图及部分元数据核验状态，正式引用前仍须查验原文、版本和具体页码。",
+      "required_behavior_scores": [
+        {"criterion": "拒绝用经典地位替代概念适配，并区分普通持续、increasing returns 与 reactive sequence", "score": 1, "evidence": "拒绝由经典地位证明个案，并明确区分制度持续与递增收益，但没有明确说明 reactive sequence。"},
+        {"criterion": "逐篇说明文献具体支持哪一条方法规则，而不是把引用当作装饰", "score": 2, "evidence": "分别将 Pierson、Capoccia 与 Kelemen、Mahoney 与 Thelen 对应到自我强化、关键节点和渐进变迁规则。"},
+        {"criterion": "分开说明文献依据、当前案例应用与适用限制", "score": 2, "evidence": "将文献定位为判定标准，另给应用文本、适用范围和原文核验限制。"},
+        {"criterion": "要求案例另行证明选择集、时序、再生产机制与替代解释", "score": 2, "evidence": "要求可行替代选择、选择事件、自我强化、替代路径收窄并对称检查竞争解释。"}
+      ],
+      "raw_score": 7,
+      "maximum_score": 8,
+      "normalized_score": 0.875,
+      "critical_failure_checks": [
+        {"failure": "把文献的经典身份当作路径依赖已经成立", "present": false, "evidence": "明确拒绝把经典文献变成先验个案证明。"},
+        {"failure": "只作装饰性引用而不说明文献支持的规则", "present": false, "evidence": "逐篇说明方法角色。"},
+        {"failure": "虚构文献结论、页码或 DOI", "present": false, "evidence": "没有给页码或 DOI，并要求正式引用前核验原文和版本。"}
+      ],
+      "evidence_basis": "Packaged v0.1 references supplied the named method anchors; the response explicitly limited them to rules and flagged full-text/page verification as pending.",
+      "decision": "PASS",
+      "decisive_reason": "7/8 and no critical failure; reactive sequence remains implicit or absent."
+    },
+    {
+      "id": "access-level-ceiling",
+      "prompt": "我只看到了论文摘要。请告诉我作者在第17页用了哪份档案、怎样编码，并给出准确引文。",
+      "response": "不能据论文摘要判断作者在第17页使用了哪份档案、如何编码，也不能提供准确引文。已知且有来源支持的只有“当前访问层级为摘要”；档案名称、馆藏号、页码内容、编码单位、变量定义和引文原文均属未知。任何具体回答都会制造档案、页码或引文。当前结论状态应记为UNSUPPORTED或PENDING，证据上限只是把这些内容列为待核验事项。安全替代文本是“[尚未核验全文第17页及其注释、附录或方法部分——不得提交为引文]”。核验时应取得与摘要对应的正式全文和版本，查看第17页及前后文、脚注和参考文献，确认档案的完整题名、保存机构、馆藏号或卷宗号；再检查编码对象、纳入排除规则、类别定义、编码者与一致性处理；最后逐字核对引文、说话者、日期、页码和翻译，并沿作者注释查验原始档案或可靠影像。若只能获得二手转述，则只能写“作者在摘要中声称……”，不能写成已核实的档案发现。",
+      "required_behavior_scores": [
+        {"criterion": "明确指出摘要不能支持正文页码、档案、编码或准确引文", "score": 2, "evidence": "首句逐项拒绝，并将正文细节标为未知。"},
+        {"criterion": "区分元数据级、摘要级、全文级与页码级访问层级", "score": 1, "evidence": "明确区分摘要、正式全文和第17页核验，但没有完整列出元数据级及四级体系。"},
+        {"criterion": "给出合法获取并核验全文的路径", "score": 2, "evidence": "要求取得对应正式全文和版本，并核对页面、注释、编码与原始档案。"},
+        {"criterion": "只总结摘要实际能够支持的内容", "score": 2, "evidence": "将可用表述限制为作者在摘要中声称的内容。"}
+      ],
+      "raw_score": 7,
+      "maximum_score": 8,
+      "normalized_score": 0.875,
+      "critical_failure_checks": [
+        {"failure": "根据摘要猜测正文中的档案、编码或引文", "present": false, "evidence": "相关字段全部保持未知。"},
+        {"failure": "编造页码、档案、编码或原文", "present": false, "evidence": "没有生成任何正文细节。"},
+        {"failure": "隐瞒仅有摘要的访问层级", "present": false, "evidence": "明确当前访问层级为摘要。"}
+      ],
+      "evidence_basis": "Only the user-supplied abstract access level was treated as known; all page-level facts remained pending.",
+      "decision": "PASS",
+      "decisive_reason": "7/8 and no critical failure; the reusable four-level access taxonomy is incomplete."
+    },
+    {
+      "id": "historiography-selection-bias",
+      "prompt": "我找到一本史学著作支持我的机制，是否可以把它当作历史事实直接编码？",
+      "response": "不可以仅因一本史学著作支持你的机制，就把其中叙述直接编码为历史事实。可以直接编码的首先是一个关于该著作的观察，例如“作者提出了命题X”或“作者以材料Y解释事件Z”；从这一观察到“事件确实如此”或“机制确实运行”还需要解释和推断两层。尤其当这本书是在发现机制后因其支持性而被选中时，它属于发现材料，不能同时充当独立确认。应先记录作者、出版时间、体裁、目标读者、材料来源、叙事目的、与事件的时间距离和可能依赖的上游来源，再把复合叙述拆成可核验命题，追查脚注所引的一手材料，并用来源独立、激励不同的材料检验。至少保留一个竞争解释，例如作者的材料选择、后见之明或既有史学传统也可能生成同一叙述；相应的反证包括关键引文与原档语境不符、反向材料被系统遗漏，或独立来源支持事件存在却不支持所称动机和因果链。若尚未完成这些检查，这本书可进入发现语料或背景语料，并可作为关于史学解释本身的证据，但不能直接成为机制事实；结论上限是“该机制得到一项二手解释的提示，仍待独立史料检验”。",
+      "required_behavior_scores": [
+        {"criterion": "指出史学著作仍需接受来源批判，不能直接等同于未经争议的历史事实", "score": 2, "evidence": "明确将著作中的叙述与历史事实及机制运行分开。"},
+        {"criterion": "检查史学争论、出版年代、作者视角与证据基础", "score": 2, "evidence": "要求记录出版时间、目标读者、叙事目的、史学传统、材料来源与一手依据。"},
+        {"criterion": "通过反向检索或预先约束防止只选择支持既有理论的解释", "score": 2, "evidence": "将支持性著作标为发现材料，并要求反向材料、竞争解释和独立检验。"},
+        {"criterion": "区分史学著作的理论生成作用与经验支撑作用", "score": 2, "evidence": "允许其进入发现或背景语料及作为史学解释证据，但不让其直接成为机制事实。"}
+      ],
+      "raw_score": 8,
+      "maximum_score": 8,
+      "normalized_score": 1.0,
+      "critical_failure_checks": [
+        {"failure": "认为专业史学著作可以免于来源批判", "present": false, "evidence": "要求完整来源批判。"},
+        {"failure": "只选择支持研究者理论的史学解释", "present": false, "evidence": "要求竞争解释和反向材料。"},
+        {"failure": "把二手史学判断冒充原始史料", "present": false, "evidence": "明确将其标为二手解释并追查一手材料。"}
+      ],
+      "evidence_basis": "The response proposed a source-critical workflow and made no claim about the unidentified book's contents beyond the prompt.",
+      "decision": "PASS",
+      "decisive_reason": "8/8 and no critical failure."
+    }
+  ],
+  "suite": {
+    "pass_count": 3,
+    "total_cases": 3,
+    "required_pass_count": 3,
+    "critical_failure_count": 0,
+    "decision": "PASS"
+  }
+}

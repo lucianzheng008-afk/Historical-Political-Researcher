@@ -1,0 +1,2 @@
+claim_id,claim_text,mechanism_id,evidence_ids,claim_strength,scope_conditions,status
+CL-1,Tradition caused policy success everywhere,M-1,E-1,strong,,active

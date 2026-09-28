@@ -1,0 +1,6 @@
+interface:
+  display_name: "历史政治学研究"
+  short_description: "历史政治学选题、因果分析、比较设计与审稿"
+  default_prompt: "Use $historical-political-research to turn this topic or draft into an auditable historical political science research design."
+policy:
+  allow_implicit_invocation: true

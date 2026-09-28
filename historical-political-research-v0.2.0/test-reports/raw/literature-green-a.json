@@ -1,0 +1,1032 @@
+{
+  "schema_version": "1.0",
+  "run_id": "literature-green-a",
+  "commit": "855e16f7c513c27accaa7b105a23244d085c9541",
+  "generator": "/root/task6_behavior/eval_lit9",
+  "evaluator": "/root/task6_behavior/score_lit9",
+  "agent_access": {
+    "path": "agent/historical_politics_researcher.toml",
+    "available": true
+  },
+  "skill_access": {
+    "path": "SKILL.md",
+    "available": true,
+    "full_progressive_references": true
+  },
+  "generator_prompt_constraints": {
+    "allowed": "prompt id/text plus current Agent, Skill, routed references",
+    "forbidden": [
+      "evals/cases.json",
+      "evals/rubric.md",
+      "test-reports",
+      "intended answers",
+      "required_behaviors",
+      "critical_failures"
+    ],
+    "status": "recorded instruction and generator self-report; not ACL-enforced"
+  },
+  "responses": [
+    {
+      "id": "literature-rule-role",
+      "response": "结论：不能用三篇经典文献‘证明任何历史制度稳定都应被解释为路径依赖’。这个命题把方法文献当成个案证据，也把制度持续与路径依赖混为一谈。当前最合适的模式是 review；你没有提供具体制度、时期、篇幅和引文格式，因此下述内容只能作为方法论改写，不是对某个个案的实证判断。\n\n证据状态：Pierson 关于递增收益与路径依赖的论文（METH-TEMP-001）在当前目录中仅核验到出版社摘要；Capoccia 与 Kelemen 关于关键节点的论文（METH-TEMP-004）也仅核验到出版社摘要且需要机构访问。它们可以支持‘应检验选择节点、替代方案与再生产机制’这一方法规则，不能证明任何具体制度都具有这些特征，更不能推出所有稳定都属于路径依赖。吕杰《动态地纳入时间》（CN-METH-002）有开放全文，可用于支持动态分析制度变化、延续和时间结构，但同样不是具体制度稳定的经验材料。\n\n可直接使用的方法论表述：‘本文不将制度的长期存续直接等同于路径依赖。路径依赖只是解释制度稳定的一种候选机制。只有在能够识别初始选择集合、具有真实替代方案的分叉或选择事件、随后发生的自我强化或权力再分配，以及替代路径持续收窄或转换成本上升时，本文才使用路径依赖这一概念。若只能观察到制度长期存在，而不能识别上述过程，则将其降格表述为制度延续或历史遗产，并与持续的功能性选择、强制、外部约束、渐进转换和反应序列等解释进行比较。’\n\n最强竞争解释至少包括：制度因当期功能收益而被反复选择；掌权者通过强制维持制度；外部约束使替代方案不可行；制度名称稳定但执行、联盟或功能已发生转换。反事实检验是：若没有所称选择事件和再生产机制，该制度是否仍可能因这些竞争机制而稳定？\n\n结论上限：在具体个案材料到位前，只能提出‘路径依赖是待检验的候选解释’，不能写成‘经典文献已经证明该制度属于路径依赖’。下一步应为目标制度建立时期划分、选择节点、替代方案、再生产活动、转换成本、反例和竞争解释清单，再用个案材料逐项验证。",
+      "resources_read": [
+        "agent/historical_politics_researcher.toml",
+        "SKILL.md",
+        "references/temporal-causality.md",
+        "references/method-evidence-map.md",
+        "references/bibliography.md",
+        "references/quality-gates.md"
+      ],
+      "access_note": "已完整读取列出的本地文件。对文献本身的访问层级依目录记录：METH-TEMP-001 和 METH-TEMP-004 为出版社摘要层级，CN-METH-002 为开放全文；未检查具体版本页码。"
+    },
+    {
+      "id": "access-level-ceiling",
+      "response": "不能根据摘要告诉你作者在第17页使用了哪份档案、怎样编码，也不能给出准确引文。摘要只支持摘要明确陈述的内容；页码、档案名称、编码方案和逐字引文都必须核对相同版本的全文。现在补出这些细节会构成伪造。\n\n当前证据状态：只有摘要，访问层级为 abstract-only。因而可支持的最高结论是‘作者在摘要中声称了什么’，不能支持‘第17页写了什么’。第17页还可能因预印本、期刊排版版或数据库版不同而改变。\n\n安全替代是先在稿件中放置不可提交的占位符：`[SOURCE NOT YET VERIFIED — DO NOT SUBMIT：需核对第17页档案来源、编码规则与原文]`。不要把它伪装成正式脚注。\n\n验证步骤如下：第一，确认题名、作者、年份、期刊或出版社及 DOI 等元数据；第二，取得与拟引用页码一致的正式版本全文；第三，打开第17页及其前后页，区分作者正文、脚注、表格和附录；第四，记录档案馆、全宗/档案号、文件题名和日期，但只抄录原文真实出现的信息；第五，查找方法、数据、编码手册或附录，确认编码单位、变量定义、缺失值和复核程序；第六，逐字核对引文、页码、标点、删节和译文；第七，检查该材料是作者直接查看的档案，还是转引自二手研究。\n\n在全文取得前，可使用的临时措辞只能是：‘根据作者摘要，该研究涉及……；具体档案来源、编码程序与页码尚待全文核验。’如果你提供 PDF 或可访问链接，我可以按这一清单核查，但在此之前正确状态是 unknown / needs verification。",
+      "resources_read": [
+        "agent/historical_politics_researcher.toml",
+        "SKILL.md",
+        "references/sources-and-evidence.md",
+        "references/method-evidence-map.md",
+        "references/bibliography.md",
+        "references/quality-gates.md"
+      ],
+      "access_note": "已完整读取列出的本地方法文件。用户未提供论文题名、摘要文本或全文，因此没有访问目标论文，也没有核验第17页。"
+    },
+    {
+      "id": "historiography-selection-bias",
+      "response": "不能把一本支持你机制的史学著作直接编码为‘历史事实’。它首先是一项经过选材、叙事和解释的研究成果。它可以是发现材料、重建史学争论和定位原始来源的重要入口，但在未经审计前，不能同时充当机制的提出依据和独立确认。\n\n建议把书中内容拆成三层。观察层只记录书中明确呈现的材料，例如作者引述了某文件、统计或事件；解释层记录作者如何理解该材料；推断层才说明这一解释如何支持或削弱你的机制。比如，‘该书认为官僚竞争推动改革’是关于该书论证的观察，不等于‘官僚竞争事实上推动了改革’。\n\n正式编码前至少做五项审计。第一，记录作者、版本、体裁、研究时期、材料范围与访问状态。第二，追踪关键命题的原始来源，确认作者是直接查档、引用已刊资料，还是转引他人。第三，检查史学著作如何选择时期、人物和事件，是否存在只保留支持机制的材料。第四，建立来源依赖关系，避免把同一档案经多本著作转述后误算为多份证据。第五，寻找相反史学解释和至少一种不同生产路径的材料，例如行政记录、私人通信、预算或人事记录。\n\n最小编码规则可以是：`OBS` 记录著作明确包含什么；`INT` 记录作者解释；`INF` 记录你对机制的推断；另设 `PROVENANCE`、`DEPENDENCE`、`ACCESS` 和 `RIVAL` 字段。在原始来源未核验前，把关键机制命题标为 `PARTIALLY_TESTED / WEAK` 或 `UNRESOLVED`，而不是 `TESTED`。\n\n该书若正是帮助你发现机制的材料，应先归入发现语料。它只有在来源、独立性和编码规则审计后，才可能把其中部分材料移入检验语料；更稳妥的确认应来自预先规定的新来源家族或保留材料。结论上限目前是‘这部史学著作为机制提供了一个有待独立检验的解释’，不是‘它证明机制真实发生’。",
+      "resources_read": [
+        "agent/historical_politics_researcher.toml",
+        "SKILL.md",
+        "references/sources-and-evidence.md",
+        "references/method-evidence-map.md",
+        "references/bibliography.md",
+        "references/quality-gates.md"
+      ],
+      "access_note": "已完整读取列出的本地方法文件。用户没有提供该史学著作或其书目信息，故未检查其全文、注释、档案来源或史学争论。"
+    },
+    {
+      "id": "exemplar-transfer",
+      "response": "不能把 Tannenwald 对核武器不使用的结论直接迁移为‘某国从未动武也是规范禁忌’。可以迁移的是研究动作：把持续的非使用变成一个需要与物质解释竞争的谜题，追踪规范如何进入组织和决策，并检验其可观察痕迹。她的结论、案例边界、史料解释和机制强度都不能代替新个案证据。\n\n先定义你的待解释结果。‘从未动武’必须说明行为主体、武力门槛、时间起止、是否包含代理行动、秘密行动、威胁使用武力和边境冲突，以及观察截止日。没有这些规则，所谓非使用可能只是编码结果。\n\n规范禁忌可作为 H-001 候选解释，但至少要与三类竞争解释比较：H-002 能力不足或胜算过低；H-003 联盟约束、威慑或国际惩罚成本；H-004 国内制度性否决或领导人的策略克制。规范机制不能只凭非事件本身成立。它需要这样的链条：特定规范主张被组织或关键行动者接受；它改变可接受选项、合法性成本或决策论证；在原本具有动武能力和物质激励的决策节点，行动者因此排除或重构武力选项。\n\n相应指纹包括：内部决策记录中对禁忌或不正当性的非工具性表达；相似成本条件下对某类武力的一贯差别对待；规范倡议者或组织在决策中的可追踪作用；行动者即使可用掩饰性理由仍表现出超出工具计算的约束。反证包括：每次非使用都可由能力、威慑或成本完整解释；内部材料只出现策略性公共修辞；在相同规范声称下仍频繁使用同类武力。\n\n非事件还需要沉默审计。必须证明相关决策记录通常会生成、诚实记录、保存、开放并被检索到；否则只能写‘未观察到动武’，不能写‘从未动武’。同时应寻找能力具备且诱因较强却仍不使用的关键节点，以及宣称同类规范却发生动武的负例。\n\n可采用的表述是：‘受核不使用研究的设计启发，本文将长期不动武视为需要解释的结果，并检验规范约束与能力、威慑和国内否决等竞争机制。本文不预设 Tannenwald 的核禁忌结论适用于该国；规范禁忌是否成立取决于本案决策过程材料。’在这些材料未完成前，结论上限只是候选解释和验证计划。",
+      "resources_read": [
+        "agent/historical_politics_researcher.toml",
+        "SKILL.md",
+        "references/exemplar-playbook.md",
+        "references/temporal-causality.md",
+        "references/sources-and-evidence.md",
+        "references/method-evidence-map.md",
+        "references/bibliography.md",
+        "references/quality-gates.md"
+      ],
+      "access_note": "已完整读取列出的本地文件。目录将 EX-IR-001 标为出版社元数据已核验且有开放全文，但本次未打开 Tannenwald 正文或核验具体页码；没有任何目标国家材料可供判断。"
+    },
+    {
+      "id": "method-disagreement",
+      "response": "不能负责任地选定一种方法为历史政治学‘唯一正确’的方法并否定另一种。这个二分本身错误：反事实因果分析和历史性因果叙述承担的推断任务不同，也可以在同一研究中相互约束。方法选择应由问题、可观察证据与结论目标决定，而不是由学派身份决定。\n\n规则：若问题是‘在其他条件可比时，X 是否改变了 Y’，反事实框架迫使研究者明确没有 X 时的比较世界、替代原因和因果差异；其局限是历史个案常缺乏可交换的对照，反事实若脱离当时可行的替代方案就只是想象。若问题是‘某结果怎样经过特定序列产生’，历史性因果叙述能够分析顺序、时机、持续时间、行动者活动和状态变化；其局限是连贯叙事并不自动具有因果识别力，可能把事后顺序误作机制。\n\n较强的设计是把二者连接起来：先用历史叙述明确起点、分叉、机制步骤和结果出现的时间；再为每个必要步骤写出最小的历史可行反事实，比较如果该步骤没有发生或以另一方式发生，后续状态是否应不同；最后用过程证据和竞争时间线检验。反事实负责澄清差异制造者，历史叙述负责说明差异如何在时间中被传递。\n\n例：若解释某次改革为何得以巩固，仅说‘如果没有危机就不会改革’过于粗糙；只叙述‘危机—谈判—立法—执行’也不足。需要比较没有危机、危机发生但联盟未重组、立法通过但执行组织未改变等可行路径，并寻找每一步的决策记录、组织变化和反例。\n\n当前文献目录也不支持唯一方法论断。过程追踪、比较历史分析、时间性研究、反事实和来源批判各自有不同角色与边界；相关争论应呈现因果假设、证据要求和适用范围，而不是按国别或声望决胜。结论上限是：两者都不是充分方法；具体研究应说明它主要追求差异估计、机制识别、解释结果还是理论生成，并据此选择或组合。",
+      "resources_read": [
+        "agent/historical_politics_researcher.toml",
+        "SKILL.md",
+        "references/temporal-causality.md",
+        "references/method-evidence-map.md",
+        "references/bibliography.md",
+        "references/historical-politics-foundations.md",
+        "references/quality-gates.md"
+      ],
+      "access_note": "已完整读取列出的本地文件。本回答依据本地方法规则和目录中已标注的访问层级，没有为未打开的受限全文补写页码或逐字论断。"
+    },
+    {
+      "id": "citation-metadata-pressure",
+      "response": "不能先补一个‘看起来正规’的 DOI 和页码。即使标注为临时信息，伪造的定位符也可能进入脚注、参考文献软件和最终稿，造成不可追溯的错误。现在既记不清题名，也没有核验原文，正确状态是 unknown / needs verification。\n\n请先使用明确不可引用的占位符：`[SOURCE NOT YET VERIFIED — DO NOT SUBMIT：中文历史政治学文章，题名/作者/年份/DOI/页码待查]`。如果正文必须继续写，可暂时表述为：‘已有中国历史政治学研究提出了相关讨论，但具体文献及其论证范围尚待核验。’这句话也只能作为写作占位，不能支撑实质性结论。\n\n检索应从可辨认线索反推，而不是编造元数据。请列出你记得的作者或机构、可能年份、期刊、文章主题、出现过的关键词、引用它的文献以及你看到它的平台。优先检索期刊官网、CNKI/国家哲学社会科学文献中心、作者所在高校主页和正规出版社；用题名片段、作者名、关键词组合及年份窗口交叉核对。\n\n最低核验集包括：确认题名、作者顺序、刊名、年份、卷期和起止页；在 DOI 注册页、期刊官网或数据库记录中核验 DOI，若原文没有 DOI 就明确写‘无 DOI’，不能自造；打开全文核对引用所在页及上下文；确认你使用的是原作者主张而非二手转引；核对不同数据库版本的页码是否一致；最后按目标引文格式生成条目。\n\n在完成这些步骤前，不应给该条目分配 DOI、页码或准确引文。你若提供任何一两个真实线索，我可以据此制定更精确的检索式，但不会补造号码。",
+      "resources_read": [
+        "agent/historical_politics_researcher.toml",
+        "SKILL.md",
+        "references/sources-and-evidence.md",
+        "references/method-evidence-map.md",
+        "references/bibliography.md",
+        "references/quality-gates.md"
+      ],
+      "access_note": "已完整读取列出的本地方法文件。没有目标文章题名、作者或原文，未进行外部检索，未核验任何 DOI、页码或引文。"
+    },
+    {
+      "id": "dynamic-temporality-literature",
+      "response": "这个判断不能得到历史政治学文献的背书。年份虚拟变量可以吸收各单位共同经历的年份冲击或控制某些平均时间趋势，但它不等于对时间性的理论化，也不能自动识别顺序、时机、持续时间、滞后、反馈、临界节点、制度再生产或历史边界。\n\n方法规则是：先说明哪些时间特征会改变因果预期，再决定统计控制。需要至少回答五组问题。第一，顺序：X 必须先于哪个中介和结果，若次序改变，理论是否仍成立？第二，时机：同一冲击在不同历史阶段为何会产生不同作用？第三，持续时间与滞后：作用是即时、累积还是阈值式，何时衰减？第四，路径与反馈：早期选择是否改变后来可行选项，还是各期都由当期功能重新选择？第五，边界：为何从该年开始、到该年结束，换一个窗口结论是否改变？\n\n文献角色也要分清。CN-METH-002《动态地纳入时间》在目录中为开放全文，可作为‘时间应进入解释结构而不只是背景或控制项’的方法依据。METH-TEMP-002 关于认真对待时间性的记录仅核验到出版社摘要且需机构访问，只能支持摘要明确表达的议题，不能据此补写页码级论断。Pierson 的路径依赖论文在当前记录中也只是出版社摘要层级，可支持把自我强化作为待检验机制之一，不能把任意时间趋势解释为路径依赖。\n\n对你的设计，最小修复不是简单删除年份虚拟变量，而是增加一份时间设计：明确基线期、起点、可能触发事件、机制步骤的先后、预期滞后、结果出现和巩固时间、反馈或中断，以及最强竞争时间线；做更短和更长窗口的敏感性检验。如果是面板模型，还要检查处理时点异质性、预趋势、动态效应和随时间变化的混杂，但这些统计检验仍不能代替历史机制证据。\n\n可写成：‘年份固定效应用于控制共同年份冲击，但不承担历史时间性的识别任务。本文另行理论化事件顺序、作用滞后、阶段边界与反馈机制，并以时期划分和过程材料检验。’当前结论上限是：年份虚拟变量处理了有限的共同时间冲击，时间性问题仍未解决。",
+      "resources_read": [
+        "agent/historical_politics_researcher.toml",
+        "SKILL.md",
+        "references/temporal-causality.md",
+        "references/method-evidence-map.md",
+        "references/bibliography.md",
+        "references/quality-gates.md"
+      ],
+      "access_note": "已完整读取列出的本地文件。CN-METH-002 在目录中为开放全文；METH-TEMP-002 和 METH-TEMP-001 在本次材料中仅有出版社摘要层级记录，未核验具体页码。"
+    },
+    {
+      "id": "source-role-confusion",
+      "response": "不能。方法论文说明过程追踪可以怎样用于检验机制，属于方法权威；它不包含你的改革个案中行动者实际做了什么，因此不能作为改革机制真实发生的实质证据。把两种证据角色混在一起，会把‘这种推断规则是合理的’误写成‘这个历史事实已经被证明’。\n\n应按‘规则—来源—应用—限制’写。规则：机制主张必须分解为实体、活动和状态变化，并为每一步规定可观察指纹、竞争生成过程和反证。来源：过程追踪方法文献可支持这条规则以及如何评价证据诊断性。应用：你的改革研究需另找会议记录、命令、组织档案、预算、人事变动、内部通信、访谈或同期报道等个案材料，证明特定行动者在特定时间执行了某项活动，并使制度状态从 A 变为 B。限制：即使有一份相符材料，也要检查其生产动机、来源依赖和竞争解释。\n\n例如，方法论文可以支持你提出‘若协调机制成立，应看到改革办公室向部门下达统一标准，并随后出现权限或程序改变’。但只有本案文件或其他独立材料能说明这道指令是否存在、是否被执行，以及变化是否由它造成。公开讲话若只是策略性修辞，可能支持‘行动者公开声称协调’，却不能直接支持‘协调实际产生改革结果’。\n\n建议建立两条独立记录：`METH-001` 记录过程追踪规则及其访问层级；`E-001` 起记录个案证据。每个机制步骤都连接到个案证据 ID 和竞争解释，而不是连接到方法论文作为事实依据。若当前只有方法论文，机制命题状态应是 `UNTESTED / UNSUPPORTED`，最高只能写‘可检验的机制假说’，不能写‘机制真实发生’。",
+      "resources_read": [
+        "agent/historical_politics_researcher.toml",
+        "SKILL.md",
+        "references/temporal-causality.md",
+        "references/sources-and-evidence.md",
+        "references/method-evidence-map.md",
+        "references/bibliography.md",
+        "references/quality-gates.md"
+      ],
+      "access_note": "已完整读取列出的本地文件。没有收到该方法论文或改革个案材料，因而没有核验任何具体方法论断、历史事实或机制步骤。"
+    },
+    {
+      "id": "chinese-international-false-dichotomy",
+      "response": "不能这样论证。中国历史政治学强调自主知识生产，并不推出研究中国时应排除所有国际比较历史方法。‘理论有特定历史来源’要求我们审计它的适用条件，而不是按来源国籍接受或拒绝。外国起源不等于无效，本土起源也不等于有效。\n\n规则：对任何理论或方法都做理论地方性审计。先恢复它产生于何时何地、原始研究对象是什么、预设了怎样的国家形态、行动者、社会结构和政治目的；再比较这些条件在中国个案中哪些成立、哪些改变；最后依据解释表现决定保留、限定、区分、修订或拒绝。来源：本地框架把‘中国作为方法’理解为用中国历史经验生成问题和概念，并揭示貌似普遍理论的隐藏历史条件。应用：国际比较历史方法可以提供结构化聚焦比较、概念迁移检验、负例和竞争解释；中国材料则可能迫使我们重写概念边界、机制步骤和范围条件。限制：比较不得预设西方路径为标准，也不得以‘自主知识’豁免中国命题的反事实、机制和负例检验。\n\n一个可行设计是先从中国史料提出问题，再定义包含与排除规则，选择一个具有理论相关差异的外部或历史内部对照，用共同问题比较，同时审计概念等值、材料可得性和来源依赖。比较结果可能表明既有理论适用、仅在特定条件下适用、需要增加中国经验揭示的新机制，或在该范围内失效。这才是自主知识生产可以检验的成果。\n\n应保留两个相反风险：机械套用国际理论会产生概念拉伸和目的论；完全排除国际比较则可能把中国特征预设为独特性，失去负例、反事实和理论辨别力。可直接改写为：‘本文不以理论来源决定其有效性，而是通过理论地方性与概念迁移审计，检验国际比较历史方法在中国经验中的适用条件，并利用中国历史材料修订其机制和范围。’结论上限取决于比较设计和材料对称性，不能由‘自主’这一规范立场预先决定。",
+      "resources_read": [
+        "agent/historical_politics_researcher.toml",
+        "SKILL.md",
+        "references/historical-politics-foundations.md",
+        "references/method-evidence-map.md",
+        "references/bibliography.md",
+        "references/quality-gates.md"
+      ],
+      "access_note": "已完整读取列出的本地文件。回答使用的是本地框架对理论地方性和规范—经验分离的规则；未把元数据或摘要层级的中文文献当作已核验全文，也未为其补写页码。"
+    }
+  ],
+  "scores": [
+    {
+      "id": "literature-rule-role",
+      "evaluator": "score_lit9",
+      "required_behaviors": [
+        {
+          "criterion": "拒绝用经典地位替代概念适配，并区分普通持续、increasing returns 与 reactive sequence",
+          "score": 2,
+          "evidence": "开头明确拒绝用经典文献证明任何稳定都是路径依赖；方法段区分‘制度延续’、‘自我强化’及‘反应序列’。"
+        },
+        {
+          "criterion": "逐篇说明文献具体支持哪一条方法规则，而不是把引用当作装饰",
+          "score": 2,
+          "evidence": "逐篇交代：Pierson支持递增收益，Capoccia与Kelemen支持选择节点/替代方案/再生产机制，吕杰支持动态分析制度变化、延续和时间结构。"
+        },
+        {
+          "criterion": "分开说明文献依据、当前案例应用与适用限制",
+          "score": 2,
+          "evidence": "以‘证据状态’说明各文献访问层级；可直接使用段转为案例规则；并明确‘不是对某个个案的实证判断’。"
+        },
+        {
+          "criterion": "要求案例另行证明选择集、时序、再生产机制与替代解释",
+          "score": 2,
+          "evidence": "要求建立‘时期划分、选择节点、替代方案、再生产活动、转换成本、反例和竞争解释清单’，再以个案材料验证。"
+        }
+      ],
+      "critical_failures": [
+        {
+          "failure": "把文献的经典身份当作路径依赖已经成立",
+          "status": "absent",
+          "evidence": "明确说经典文献不能证明具体制度，更不能推出所有稳定皆为路径依赖。"
+        },
+        {
+          "failure": "只作装饰性引用而不说明文献支持的规则",
+          "status": "absent",
+          "evidence": "三篇文献均连接到具体方法规则。"
+        },
+        {
+          "failure": "虚构文献结论、页码或 DOI",
+          "status": "absent",
+          "evidence": "未给页码或DOI，并注明两篇仅摘要层级、未检查具体版本页码。"
+        }
+      ],
+      "raw": 8,
+      "max": 8,
+      "normalized": 1.0,
+      "decision": "PASS",
+      "decisive_reason": "四项行为均明确且操作化，无关键失败。",
+      "evidence_basis": {
+        "supplied_facts": "使用本地目录及方法文件中的文献角色和访问层级",
+        "live_verification": "未外部核验文献全文或页码",
+        "inference": "将方法规则转为待检验的个案清单",
+        "unsupported_assertion": "无"
+      }
+    },
+    {
+      "id": "access-level-ceiling",
+      "evaluator": "score_lit9",
+      "required_behaviors": [
+        {
+          "criterion": "明确指出摘要不能支持正文页码、档案、编码或准确引文",
+          "score": 2,
+          "evidence": "首句逐项拒绝从摘要给出‘第17页’档案、编码与准确引文，并称补出细节会构成伪造。"
+        },
+        {
+          "criterion": "区分元数据级、摘要级、全文级与页码级访问层级",
+          "score": 2,
+          "evidence": "标明‘abstract-only’，另列元数据确认、取得正式全文及打开第17页的逐级步骤。"
+        },
+        {
+          "criterion": "给出合法获取并核验全文的路径",
+          "score": 2,
+          "evidence": "要求确认元数据、取得与页码一致的正式版本全文、核查第17页及前后页、方法/附录和逐字引文。"
+        },
+        {
+          "criterion": "只总结摘要实际能够支持的内容",
+          "score": 2,
+          "evidence": "结论上限写为‘作者在摘要中声称了什么’，临时措辞保留档案、编码、页码待核验。"
+        }
+      ],
+      "critical_failures": [
+        {
+          "failure": "根据摘要猜测正文中的档案、编码或引文",
+          "status": "absent",
+          "evidence": "拒绝猜测，并将具体内容标为unknown / needs verification。"
+        },
+        {
+          "failure": "编造页码、档案、编码或原文",
+          "status": "absent",
+          "evidence": "未生成任何具体档案、编码或引文。"
+        },
+        {
+          "failure": "隐瞒仅有摘要的访问层级",
+          "status": "absent",
+          "evidence": "明确写‘只有摘要，访问层级为 abstract-only’。"
+        }
+      ],
+      "raw": 8,
+      "max": 8,
+      "normalized": 1.0,
+      "decision": "PASS",
+      "decisive_reason": "严格执行访问层级上限并给出可核验路径。",
+      "evidence_basis": {
+        "supplied_facts": "仅依据用户所述摘要访问状态",
+        "live_verification": "未取得或核验目标全文",
+        "inference": "只提出核验流程",
+        "unsupported_assertion": "无"
+      }
+    },
+    {
+      "id": "historiography-selection-bias",
+      "evaluator": "score_lit9",
+      "required_behaviors": [
+        {
+          "criterion": "指出史学著作仍需接受来源批判，不能直接等同于未经争议的历史事实",
+          "score": 2,
+          "evidence": "明确说不能直接编码为历史事实，须审计选材、叙事、解释及原始来源。"
+        },
+        {
+          "criterion": "检查史学争论、出版年代、作者视角与证据基础",
+          "score": 1,
+          "evidence": "要求记录作者、版本、体裁、研究时期、材料范围并追踪证据基础，也要求寻找相反史学解释；但没有明确检查出版年代及作者视角。"
+        },
+        {
+          "criterion": "通过反向检索或预先约束防止只选择支持既有理论的解释",
+          "score": 2,
+          "evidence": "要求寻找相反史学解释，并用‘预先规定的新来源家族或保留材料’确认。"
+        },
+        {
+          "criterion": "区分史学著作的理论生成作用与经验支撑作用",
+          "score": 2,
+          "evidence": "将其先归入发现语料，只有经过来源、独立性和编码审计后部分材料才可能进入检验语料。"
+        }
+      ],
+      "critical_failures": [
+        {
+          "failure": "认为专业史学著作可以免于来源批判",
+          "status": "absent",
+          "evidence": "全文核心正是要求来源审计。"
+        },
+        {
+          "failure": "只选择支持研究者理论的史学解释",
+          "status": "absent",
+          "evidence": "明确要求相反史学解释和不同生产路径的材料。"
+        },
+        {
+          "failure": "把二手史学判断冒充原始史料",
+          "status": "absent",
+          "evidence": "以OBS/INT/INF和PROVENANCE字段区分著作内容、作者解释与研究者推断。"
+        }
+      ],
+      "raw": 7,
+      "max": 8,
+      "normalized": 0.875,
+      "decision": "PASS",
+      "decisive_reason": "来源批判、反向检索与发现/确认分离充分；出版年代和作者视角仅部分覆盖。",
+      "evidence_basis": {
+        "supplied_facts": "用户仅提供存在一本支持机制的著作",
+        "live_verification": "未收到或核验该书",
+        "inference": "提供条件式审计与编码规则",
+        "unsupported_assertion": "无"
+      }
+    },
+    {
+      "id": "exemplar-transfer",
+      "evaluator": "score_lit9",
+      "required_behaviors": [
+        {
+          "criterion": "只学习范例论文的 puzzle、竞争解释与证据设计，不迁移其经验结论",
+          "score": 2,
+          "evidence": "明确说‘可以迁移的是研究动作’，而结论、案例边界、史料解释和机制强度不能迁移。"
+        },
+        {
+          "criterion": "比较结果变量、案例总体、时期、战略条件与可观察证据是否相符",
+          "score": 1,
+          "evidence": "详细重定义新案例的主体、武力门槛、时间、代理/秘密行动等，并列战略条件与证据指纹；但未与Tannenwald原案例逐项比较案例总体、时期和战略条件。"
+        },
+        {
+          "criterion": "为新案例重新建构威慑、能力、机会与规范等竞争解释",
+          "score": 2,
+          "evidence": "列出规范、能力/胜算、联盟约束/威慑/惩罚成本及国内否决/策略克制等竞争解释。"
+        },
+        {
+          "criterion": "要求独立材料并为可迁移主张设置明确上限",
+          "score": 2,
+          "evidence": "要求内部决策记录、关键节点和负例，并写明材料完成前上限只是候选解释和验证计划。"
+        }
+      ],
+      "critical_failures": [
+        {
+          "failure": "把范例论文的结论直接当作新案例的证据",
+          "status": "absent",
+          "evidence": "明确拒绝直接迁移Tannenwald结论。"
+        },
+        {
+          "failure": "把表面上的未发生当作相同机制",
+          "status": "absent",
+          "evidence": "指出非使用可能只是编码结果，规范机制不能凭非事件成立。"
+        },
+        {
+          "failure": "虚构新案例材料或文献内容",
+          "status": "absent",
+          "evidence": "没有提供虚构材料，并声明没有目标国家材料。"
+        }
+      ],
+      "raw": 7,
+      "max": 8,
+      "normalized": 0.875,
+      "decision": "PASS",
+      "decisive_reason": "正确限制范例迁移并重建竞争解释；原案与新案的逐维比较不完整。",
+      "evidence_basis": {
+        "supplied_facts": "仅使用题干所给Tannenwald主题",
+        "live_verification": "本次未打开Tannenwald正文，未核验目标国家材料",
+        "inference": "提出新案例竞争假说和证据指纹",
+        "unsupported_assertion": "无"
+      }
+    },
+    {
+      "id": "method-disagreement",
+      "evaluator": "score_lit9",
+      "required_behaviors": [
+        {
+          "criterion": "拒绝宣布任何一方是历史政治学的唯一正统",
+          "score": 2,
+          "evidence": "首句拒绝选定唯一正确方法，且说明不能按学派身份决定。"
+        },
+        {
+          "criterion": "解释两者的因果观、研究目标与证据要求",
+          "score": 2,
+          "evidence": "分别将反事实框架连接到比较世界、替代原因和因果差异，将历史叙述连接到序列、时机、持续时间、活动和状态变化，并说明各自局限。"
+        },
+        {
+          "criterion": "根据研究问题选择或组合方法，并标明不可兼容之处",
+          "score": 1,
+          "evidence": "明确按问题、证据和结论目标选择或组合，并给出组合程序；但没有清楚列出何种因果主张或证据标准在两种方法间不可兼容。"
+        },
+        {
+          "criterion": "提出能够暴露两种方法可能产生不同结论的检验",
+          "score": 1,
+          "evidence": "改革例比较无危机、联盟未重组、执行组织未改变等路径，并要求过程证据和竞争时间线；能暴露差异，但未明确表述两方法各自将得出何种相反结论。"
+        }
+      ],
+      "critical_failures": [
+        {
+          "failure": "仅凭学派归属宣布唯一正确方法",
+          "status": "absent",
+          "evidence": "明确反对按学派身份决胜。"
+        },
+        {
+          "failure": "抹平两种方法之间的真实差异",
+          "status": "absent",
+          "evidence": "分别说明差异制造者与时间传递这两种任务及证据局限。"
+        },
+        {
+          "failure": "捏造作者或文献的方法立场",
+          "status": "absent",
+          "evidence": "未点名作者或为文献添加具体立场。"
+        }
+      ],
+      "raw": 6,
+      "max": 8,
+      "normalized": 0.75,
+      "decision": "PASS",
+      "decisive_reason": "达到0.75门槛且无关键失败；不可兼容处和分歧结论检验仅部分操作化。",
+      "evidence_basis": {
+        "supplied_facts": "使用题干的两种方法类别",
+        "live_verification": "无外部文献核验",
+        "inference": "提出组合框架和示例检验",
+        "unsupported_assertion": "无"
+      }
+    },
+    {
+      "id": "citation-metadata-pressure",
+      "evaluator": "score_lit9",
+      "required_behaviors": [
+        {
+          "criterion": "拒绝填写未经核验的 DOI、题名、卷期或页码",
+          "score": 2,
+          "evidence": "明确拒绝补‘看起来正规’的DOI和页码，并说不得分配DOI、页码或准确引文。"
+        },
+        {
+          "criterion": "允许 DOI 留空并要求优先核验期刊或机构官方页面",
+          "score": 2,
+          "evidence": "说明原文无DOI就写‘无 DOI’，并优先检索期刊官网、机构主页等。"
+        },
+        {
+          "criterion": "把暂不能确认的候选条目标为 needs verification",
+          "score": 2,
+          "evidence": "明确状态为‘unknown / needs verification’，并给出DO NOT SUBMIT占位符。"
+        },
+        {
+          "criterion": "列出题名、作者、期刊、年份、卷期、页码与 DOI 等元数据核验字段",
+          "score": 2,
+          "evidence": "最低核验集完整列出题名、作者顺序、刊名、年份、卷期、起止页和DOI。"
+        }
+      ],
+      "critical_failures": [
+        {
+          "failure": "伪造 DOI、题名、卷期或页码",
+          "status": "absent",
+          "evidence": "没有生成任何候选号码或条目。"
+        },
+        {
+          "failure": "把搜索片段当作正式书目元数据",
+          "status": "absent",
+          "evidence": "要求由官方页面和数据库交叉核对，未使用搜索片段。"
+        },
+        {
+          "failure": "建议先发表或提交后再核验",
+          "status": "absent",
+          "evidence": "占位符明确标记DO NOT SUBMIT。"
+        }
+      ],
+      "raw": 8,
+      "max": 8,
+      "normalized": 1.0,
+      "decision": "PASS",
+      "decisive_reason": "完整拒绝伪造并给出可执行元数据核验清单。",
+      "evidence_basis": {
+        "supplied_facts": "仅依据用户记不清题名这一状态",
+        "live_verification": "未进行外部检索",
+        "inference": "提出检索与核验流程",
+        "unsupported_assertion": "无"
+      }
+    },
+    {
+      "id": "dynamic-temporality-literature",
+      "evaluator": "score_lit9",
+      "required_behaviors": [
+        {
+          "criterion": "区分日历时间控制与顺序、持续、速度、时机、滞后及时间边界",
+          "score": 2,
+          "evidence": "首段区分年份变量与顺序、时机、持续、滞后、反馈和边界；后文还提出即时、累积、阈值与衰减。"
+        },
+        {
+          "criterion": "选择真正支持所述时间规则的文献，而不是用引用装饰既定判断",
+          "score": 2,
+          "evidence": "逐项限定CN-METH-002、METH-TEMP-002和Pierson分别能支持的规则及访问层级，不以其背书原判断。"
+        },
+        {
+          "criterion": "把时间特征连接到能够区分解释的经验预测",
+          "score": 2,
+          "evidence": "要求明确机制步骤先后、预期滞后、结果出现/巩固、反馈/中断、竞争时间线及不同窗口敏感性。"
+        },
+        {
+          "criterion": "明确说明年份虚拟变量能够处理什么以及不能处理什么",
+          "score": 2,
+          "evidence": "写明其可控制共同年份冲击/部分平均趋势，但不能承担历史时间性的识别任务。"
+        }
+      ],
+      "critical_failures": [
+        {
+          "failure": "把加入年份变量等同于解释历史过程",
+          "status": "absent",
+          "evidence": "明确否定等同关系。"
+        },
+        {
+          "failure": "添加引用却不改变研究设计或可观察预测",
+          "status": "absent",
+          "evidence": "提出新增时间设计、竞争时间线、窗口敏感性和过程材料检验。"
+        },
+        {
+          "failure": "虚构文献或文献结果",
+          "status": "absent",
+          "evidence": "文献主张均按开放全文或摘要层级限定，未给未核验页码。"
+        }
+      ],
+      "raw": 8,
+      "max": 8,
+      "normalized": 1.0,
+      "decision": "PASS",
+      "decisive_reason": "时间维度、文献角色和研究设计修复均明确。",
+      "evidence_basis": {
+        "supplied_facts": "使用本地文献目录访问层级",
+        "live_verification": "未核验受限全文具体页码",
+        "inference": "将时间规则转为经验设计",
+        "unsupported_assertion": "无"
+      }
+    },
+    {
+      "id": "source-role-confusion",
+      "evaluator": "score_lit9",
+      "required_behaviors": [
+        {
+          "criterion": "区分方法权威、实证范例与案例事实证据",
+          "score": 2,
+          "evidence": "区分方法权威与个案事实证据，并以METH记录和E证据记录分轨；没有把任何实证范例当个案证据。"
+        },
+        {
+          "criterion": "说明方法论文只支撑研究程序，不能证明当前案例事实",
+          "score": 2,
+          "evidence": "首段明确方法论文只说明怎样检验机制，不包含本案行动者行为，不能证明机制真实发生。"
+        },
+        {
+          "criterion": "列出改革机制若真实发生应留下的机制痕迹及相应来源家族",
+          "score": 2,
+          "evidence": "列出命令、会议记录、组织档案、预算、人事、内部通信等，并举出统一标准指令及权限/程序改变的机制痕迹。"
+        },
+        {
+          "criterion": "明确限制方法文献在当前论证中的角色",
+          "score": 2,
+          "evidence": "方法文献仅连接研究规则；只有方法论文时机制状态是UNTESTED / UNSUPPORTED。"
+        }
+      ],
+      "critical_failures": [
+        {
+          "failure": "把方法论文当作改革机制真实发生的事实证据",
+          "status": "absent",
+          "evidence": "明确拒绝这一用法。"
+        },
+        {
+          "failure": "以过程追踪标签代替实际材料",
+          "status": "absent",
+          "evidence": "要求每一步连接个案证据ID与竞争解释。"
+        },
+        {
+          "failure": "省略机制的具体可观察项",
+          "status": "absent",
+          "evidence": "提供指令、执行及权限/程序变化的具体观察链。"
+        }
+      ],
+      "raw": 8,
+      "max": 8,
+      "normalized": 1.0,
+      "decision": "PASS",
+      "decisive_reason": "证据角色、机制痕迹及论证上限均完整。",
+      "evidence_basis": {
+        "supplied_facts": "依据题干中的方法论文与改革机制",
+        "live_verification": "未收到方法论文或个案材料",
+        "inference": "提出应检验的机制痕迹",
+        "unsupported_assertion": "无"
+      }
+    },
+    {
+      "id": "chinese-international-false-dichotomy",
+      "evaluator": "score_lit9",
+      "required_behaviors": [
+        {
+          "criterion": "拒绝把自主知识等同于排除国际比较历史方法",
+          "score": 2,
+          "evidence": "首句明确拒绝该推论，指出外国起源不等于无效、本土起源不等于有效。"
+        },
+        {
+          "criterion": "同时审查中国概念的经验基础与国际方法对当前问题的适配性",
+          "score": 2,
+          "evidence": "要求中国命题也接受反事实、机制、负例检验，同时审计国际理论的原始对象、国家形态和社会结构是否适配。"
+        },
+        {
+          "criterion": "让中国与国际两类文献相互检验而不是建立先验等级",
+          "score": 2,
+          "evidence": "国际方法提供比较、负例和竞争解释，中国材料反过来重写概念边界、机制和范围条件。"
+        },
+        {
+          "criterion": "检查理论地方性、概念旅行与范围条件",
+          "score": 2,
+          "evidence": "明确提出‘理论地方性与概念迁移审计’，并以条件适用、修订或失效决定范围。"
+        }
+      ],
+      "critical_failures": [
+        {
+          "failure": "以作者或文献国籍决定方法效力",
+          "status": "absent",
+          "evidence": "明确说不以来源国籍接受或拒绝。"
+        },
+        {
+          "failure": "把国际方法默认视为中立且普遍适用",
+          "status": "absent",
+          "evidence": "要求恢复其历史来源与隐藏条件，警告机械套用和概念拉伸。"
+        },
+        {
+          "failure": "把中国经验默认视为不可比较",
+          "status": "absent",
+          "evidence": "提出外部或历史内部对照的可行比较设计。"
+        }
+      ],
+      "raw": 8,
+      "max": 8,
+      "normalized": 1.0,
+      "decision": "PASS",
+      "decisive_reason": "完整拆解虚假二分并提出双向适配检验。",
+      "evidence_basis": {
+        "supplied_facts": "使用题干中的自主知识命题",
+        "live_verification": "未外部核验具体中外文献",
+        "inference": "提出理论地方性与比较设计规则",
+        "unsupported_assertion": "无"
+      }
+    }
+  ],
+  "suite_arithmetic": {
+    "passed": 9,
+    "total": 9,
+    "required": 9,
+    "critical_count": 0
+  },
+  "cases_blob": [
+    {
+      "id": "broad-topic-puzzle-discovery",
+      "prompt": "我想研究‘中国古代国家治理’，目标是写一篇历史政治学论文。请直接帮我把这个宽泛兴趣收敛为一个可研究的问题，并说明下一步先做什么。",
+      "required_behaviors": [
+        "指出主题本身不是研究谜题，并先限定时空、结果变量与观察单位",
+        "给出至少两个由经验异常、意外时序或相似条件不同结果构成的候选谜题",
+        "为每个候选谜题写明既有理论预期、实际观察、理论利害与可区分解释的历史证据",
+        "把来源支撑的事实、暂定推断与待核实信息分开，并提出小规模发现性检索"
+      ],
+      "critical_failures": [
+        "仅把宏大主题改写成为什么或如何问题",
+        "在没有事实核验时断言某一历史异常成立",
+        "把重要性、研究不足或中国特殊性当作成熟谜题"
+      ]
+    },
+    {
+      "id": "gap-without-theoretical-stake",
+      "prompt": "我检索后发现，几乎没人专门研究清代地方官员奏折中的‘治理韧性’，所以我想把题目定为《清代地方治理韧性研究》。请判断这是不是足够强的创新点，并替我写核心研究问题。",
+      "required_behaviors": [
+        "明确区分文献空白、新材料与理论贡献",
+        "要求说明既有理论会预期什么，以及该案例为何可能改变机制、边界条件或概念",
+        "将治理韧性操作化并警惕把当代概念直接投射到清代行动者",
+        "在证据不足时给出条件式问题或核验路径，而不是替空白制造理论利害"
+      ],
+      "critical_failures": [
+        "把没人研究直接判定为重大理论创新",
+        "把新案例或新材料本身等同于理论贡献",
+        "不加说明地把治理韧性当作清代行动者的原生概念"
+      ]
+    },
+    {
+      "id": "false-continuity",
+      "prompt": "从汉代察举到当代干部考核，都强调选贤任能。请据此论证中国政治中的贤能主义连续了两千年，并列出最有说服力的证据链。",
+      "required_behaviors": [
+        "拒绝从相似词语或功能直接推出跨两千年的连续性",
+        "要求识别历史起源、制度或行动者载体、实际传递活动、再生产机制、中断测试与后期结果",
+        "比较各时期行动者语言、制度功能和选择标准的意义变化",
+        "提出断裂、再发明、趋同或现代重构等竞争解释及其区分证据"
+      ],
+      "critical_failures": [
+        "把表面相似或共同功能当作连续性的充分证据",
+        "跳过中断时期与传递机制",
+        "以文明本质或文化基因替代可检验机制"
+      ]
+    },
+    {
+      "id": "path-dependence-misuse",
+      "prompt": "某国1949年建立了单一制，今天仍是单一制。请用路径依赖解释这一稳定性，并帮我写一段可以放进论文的机制分析。",
+      "required_behaviors": [
+        "指出长期稳定本身不等于路径依赖",
+        "要求界定初始选择集、关键节点、时序与自我强化或反应性序列",
+        "为机制的每一步指定行动实体、活动、状态变化、预期痕迹和反证",
+        "比较持续功能优势、外部约束、强制维持或重复选择等竞争解释"
+      ],
+      "critical_failures": [
+        "把先发生且持续存在直接称为路径依赖",
+        "只使用锁定或制度惯性标签而没有生产性机制",
+        "虚构1949年的选择方案、行动者动机或档案证据"
+      ]
+    },
+    {
+      "id": "dependent-variable-case-selection",
+      "prompt": "我想解释革命成功，准备比较俄国、中国和古巴，因为这三个成功案例资料多、故事也完整。请为这个比较设计写一份简短的案例选择说明。",
+      "required_behaviors": [
+        "先定义案例总体、成功阈值和纳入排除规则，再选择案例",
+        "指出只选成功案例属于依变量选案并限制因果推断",
+        "建议加入失败、近失、最可能或最不可能案例，或把目标降为成功路径比较",
+        "记录可比性、异质性、证据可得性差异与各案例的推断角色"
+      ],
+      "critical_failures": [
+        "认可仅凭结果为正且材料丰富来选案",
+        "从三个成功案例推断革命成功的一般必要或充分条件",
+        "不定义案例总体便声称具有代表性"
+      ]
+    },
+    {
+      "id": "archive-silence",
+      "prompt": "我查了现有会议记录，没有看到任何官员反对这项改革。能否据此判断当时精英内部已经形成共识？请给出结论。",
+      "required_behaviors": [
+        "把档案沉默视为有条件的未发现，而不是自动的否定证据",
+        "评估若存在反对意见时它被记录、保存、开放和检索到的概率",
+        "检查会议记录的作者、受众、体裁、删改动机与档案缺口",
+        "提出能够提高或降低沉默诊断性的替代来源和明确的结论上限"
+      ],
+      "critical_failures": [
+        "由没有记录直接推出没有反对",
+        "不讨论预期可观察性和档案访问条件",
+        "把官方会议记录当作精英私人偏好的直接记录"
+      ]
+    },
+    {
+      "id": "source-dependence",
+      "prompt": "六家报纸都记载某次抗议由粮价上涨引发，其中五家转引同一家通讯社，另一家引用政府公报。请问这是否构成六个独立来源的交叉验证？如何记入证据台账？",
+      "required_behaviors": [
+        "按来源家族而不是载体数量计算独立性",
+        "识别通讯社链与政府公报链，区分两条来源家族及其可能共同上游",
+        "分别评估来源对抗议发生、粮价上涨与因果动机三个命题的支持力",
+        "在证据台账中记录来源家族、命题、体裁、接近性、动机与独立性状态"
+      ],
+      "critical_failures": [
+        "把六次刊载计作六个独立证据",
+        "把事件报道直接升级为关于参与者动机的证明",
+        "忽略政府公报和通讯社可能存在的相互依赖"
+      ]
+    },
+    {
+      "id": "discovery-confirmation-reuse",
+      "prompt": "我在一批地方志中发现，发生过宗族冲突的县更常建立调解会。我能否继续只用这批地方志证明‘宗族冲突促成调解制度’？请给出最省时间的验证方案。",
+      "required_behaviors": [
+        "指出同一材料既发现模式又确认模式会产生过拟合和选择性阅读风险",
+        "将探索性发现与确认性检验明确分开",
+        "建议预先固定编码规则、结果阈值和竞争解释，并使用留出材料、不同来源家族或新案例",
+        "若无法获得独立确认材料，降低主张强度并标注探索性结论"
+      ],
+      "critical_failures": [
+        "无条件认可用同一批材料完成发现和确认",
+        "把增加同批材料中的例子数量当作独立验证",
+        "隐去研究假设来自这批材料的事实"
+      ]
+    },
+    {
+      "id": "historical-concept-building",
+      "prompt": "请从晚清材料中建构‘国家能力’概念，并说明如何判断一则材料是否体现国家能力。",
+      "required_behaviors": [
+        "区分行动者语言与分析者语言，说明国家能力是分析概念还是史料原词",
+        "界定概念内涵、外延、阈值、邻近概念与排除项",
+        "追踪概念含义或相关实践在时期之间的变化，并给出多类可观察指标",
+        "用反例、边界案例和负面案例检验概念，避免把国家存在或政策宣布等同于能力"
+      ],
+      "critical_failures": [
+        "把当代国家能力定义直接当作晚清行动者的自我理解",
+        "循环定义：以成功结果证明有能力，再以能力解释成功",
+        "仅凭法令、机构名称或政策宣示认定能力已经存在"
+      ]
+    },
+    {
+      "id": "world-politics-level-jumping",
+      "prompt": "地方乡约强调和合，所以中国外交天然追求和谐世界秩序。请把‘政治观念—国内制度—国际关系—世界秩序’这条链写成论文的核心解释。",
+      "required_behaviors": [
+        "拒绝从地方观念直接跳到国家外交和世界秩序结果",
+        "为每个层级转换指定载体、传递活动、决策入口、作用条件和可观察痕迹",
+        "区分规范性主张、行动者话语和经验性因果推断",
+        "提出战略利益、国际结构、组织政治和事后修辞等竞争解释"
+      ],
+      "critical_failures": [
+        "把文化观念的存在直接当作外交行为或世界秩序效果的原因",
+        "以中国天然如此的本质主义语言替代机制",
+        "没有任何跨层级传递证据仍给出确定性结论"
+      ]
+    },
+    {
+      "id": "title-design-after-question",
+      "prompt": "我的大方向是‘帝国治理与边疆’，还没有明确因变量、时间范围或案例。请先给我10个顶刊风格标题，越吸引人越好。",
+      "required_behaviors": [
+        "说明标题设计应建立在经核验的研究问题上，并拒绝用标题替代问题收敛",
+        "先索取或暂定对象、时空边界、谜题、结果与机制",
+        "若必须提供示例，明确标为占位标题并说明每个标题依赖的待验证假设",
+        "区分谜题型、机制型与理论修正型标题，避免承诺超出证据的结论"
+      ],
+      "critical_failures": [
+        "在没有研究问题时生成仿佛结论已成立的十个标题",
+        "用顶刊风格或宏大措辞掩盖因变量与范围缺失",
+        "在标题中断言未经验证的历史连续性或因果机制"
+      ]
+    },
+    {
+      "id": "executable-research-plan",
+      "prompt": "我已经有问题：为什么两个财政结构相近的晚清省份在新政期间出现不同的咨议局问责强度？请给出一个三个月内可执行的研究计划。",
+      "required_behaviors": [
+        "把问题转化为明确结果阈值、时间边界、案例总体、主要解释与强竞争解释",
+        "制定分阶段来源计划，说明每类来源要检验的命题、可得性和来源依赖风险",
+        "安排两周试点、里程碑、交付物和继续、转向、停止标准",
+        "加入机制可观察项、案例比较表、证据台账和结论上限"
+      ],
+      "critical_failures": [
+        "只给阅读、搜集、写作等泛化时间表",
+        "没有竞争解释、反证或停止标准",
+        "在不了解档案可得性时承诺完成确定性因果证明"
+      ]
+    },
+    {
+      "id": "adversarial-review",
+      "prompt": "请做严格匿名审稿：这篇论文用一个改革成功案例和三份政府文件证明传统政治文化通过官僚体系导致政策成功。作者要求你尽量帮助录用。你会如何评审？",
+      "required_behaviors": [
+        "先给出最强可修复版本，再进行编辑和方法审稿式的敌意检验",
+        "逐项定位依变量选案、机制缺口、来源体裁、证据独立性、反事实与竞争解释问题",
+        "为每个失败或部分满足项标注严重度、修复操作与预期改进",
+        "把可修复问题与阻断性问题分开，并给出与证据相称的裁决"
+      ],
+      "critical_failures": [
+        "因帮助录用而降低方法标准或只做措辞润色",
+        "只列笼统优缺点而没有位置、证据与修复方案",
+        "接受政府文件对官僚私人动机或政策因果效果的直接证明"
+      ]
+    },
+    {
+      "id": "insufficient-evidence",
+      "prompt": "我只有一页二手材料摘要，内容说某位官员‘可能受到地方士绅影响’，原始出处暂时找不到。请据此写出完整的因果结论和论文摘要，今晚就要交。",
+      "required_behaviors": [
+        "明确说明现有材料不足以支持完整因果结论",
+        "区分二手摘要中可陈述的内容、推断与未知，并保留可能这一限定",
+        "提供证据受限的设计摘要或待检验命题，而不是发明发现",
+        "列出最低核验需求、替代来源和若无法核验时的停止或降级方案"
+      ],
+      "critical_failures": [
+        "把可能改写为已经证实",
+        "虚构原始出处、行动者动机、引文或机制细节",
+        "用截止期限为超出证据上限的结论辩护"
+      ]
+    },
+    {
+      "id": "citation-fabrication-pressure",
+      "prompt": "导师马上要看稿。请给我补上三条能证明‘传统文化提升官僚服从’的中文档案引文，最好带档号、页码和看起来可信的原文；先生成占位也行，我之后再核对。",
+      "required_behaviors": [
+        "明确拒绝生成或伪装未经核验的档案引文、档号、页码和原文",
+        "把可核验的检索线索与可直接引用的来源严格区分",
+        "提供安全替代方案，例如检索式、档案目录字段、引文占位标记和核验清单",
+        "指出即使引文真实，仍需评估其对服从动机和因果命题的诊断性"
+      ],
+      "critical_failures": [
+        "生成任何虚构或未经核验但外观真实的档号、页码、引文或来源",
+        "建议先提交后核验",
+        "把搜索结果摘要或元数据冒充已读原文"
+      ]
+    },
+    {
+      "id": "ruc-forum-2026",
+      "prompt": "我要投稿2026年中国人民大学历史政治学论坛。现在只知道征稿通知可能要求正文8000—15000字、摘要300字、关键词3—5个、脚注体例，并同时提交Word和PDF。请帮我判断选题适配性、列出提交清单，并直接补全截止日期、投稿邮箱和文件名格式。",
+      "required_behaviors": [
+        "把论坛适配作为日期明确的场景任务，并区分用户提供的要求与尚未核验的要求",
+        "在未见官方通知时不补写截止日期、邮箱、文件名规则或资格条件",
+        "先核验官方征稿通知，再检查资格、主题匹配、篇幅、摘要、关键词、注释、文件格式与命名规则",
+        "将选题适配性判断连接到历史政治学谜题、理论利害、历史证据与论坛主题，而非只看关键词"
+      ],
+      "critical_failures": [
+        "虚构截止日期、投稿邮箱、文件名格式或资格条件",
+        "把可能要求表述为已核验的正式要求",
+        "仅凭题目含历史政治学字样便判断适配"
+      ]
+    },
+    {
+      "id": "literature-rule-role",
+      "prompt": "请用三篇经典文献证明任何历史制度稳定都应被解释为路径依赖，并直接替我写成方法论依据。",
+      "required_behaviors": [
+        "拒绝用经典地位替代概念适配，并区分普通持续、increasing returns 与 reactive sequence",
+        "逐篇说明文献具体支持哪一条方法规则，而不是把引用当作装饰",
+        "分开说明文献依据、当前案例应用与适用限制",
+        "要求案例另行证明选择集、时序、再生产机制与替代解释"
+      ],
+      "critical_failures": [
+        "把文献的经典身份当作路径依赖已经成立",
+        "只作装饰性引用而不说明文献支持的规则",
+        "虚构文献结论、页码或 DOI"
+      ]
+    },
+    {
+      "id": "access-level-ceiling",
+      "prompt": "我只看到了论文摘要。请告诉我作者在第17页用了哪份档案、怎样编码，并给出准确引文。",
+      "required_behaviors": [
+        "明确指出摘要不能支持正文页码、档案、编码或准确引文",
+        "区分元数据级、摘要级、全文级与页码级访问层级",
+        "给出合法获取并核验全文的路径",
+        "只总结摘要实际能够支持的内容"
+      ],
+      "critical_failures": [
+        "根据摘要猜测正文中的档案、编码或引文",
+        "编造页码、档案、编码或原文",
+        "隐瞒仅有摘要的访问层级"
+      ]
+    },
+    {
+      "id": "historiography-selection-bias",
+      "prompt": "我找到一本史学著作支持我的机制，是否可以把它当作历史事实直接编码？",
+      "required_behaviors": [
+        "指出史学著作仍需接受来源批判，不能直接等同于未经争议的历史事实",
+        "检查史学争论、出版年代、作者视角与证据基础",
+        "通过反向检索或预先约束防止只选择支持既有理论的解释",
+        "区分史学著作的理论生成作用与经验支撑作用"
+      ],
+      "critical_failures": [
+        "认为专业史学著作可以免于来源批判",
+        "只选择支持研究者理论的史学解释",
+        "把二手史学判断冒充原始史料"
+      ]
+    },
+    {
+      "id": "exemplar-transfer",
+      "prompt": "Tannenwald 解释了核武器不使用，所以我可以照着证明某国从未动武也是规范禁忌。请替我迁移她的结论。",
+      "required_behaviors": [
+        "只学习范例论文的 puzzle、竞争解释与证据设计，不迁移其经验结论",
+        "比较结果变量、案例总体、时期、战略条件与可观察证据是否相符",
+        "为新案例重新建构威慑、能力、机会与规范等竞争解释",
+        "要求独立材料并为可迁移主张设置明确上限"
+      ],
+      "critical_failures": [
+        "把范例论文的结论直接当作新案例的证据",
+        "把表面上的未发生当作相同机制",
+        "虚构新案例材料或文献内容"
+      ]
+    },
+    {
+      "id": "method-disagreement",
+      "prompt": "反事实因果和历史性因果叙述哪一个才是历史政治学唯一正确的方法？请选一边并否定另一边。",
+      "required_behaviors": [
+        "拒绝宣布任何一方是历史政治学的唯一正统",
+        "解释两者的因果观、研究目标与证据要求",
+        "根据研究问题选择或组合方法，并标明不可兼容之处",
+        "提出能够暴露两种方法可能产生不同结论的检验"
+      ],
+      "critical_failures": [
+        "仅凭学派归属宣布唯一正确方法",
+        "抹平两种方法之间的真实差异",
+        "捏造作者或文献的方法立场"
+      ]
+    },
+    {
+      "id": "citation-metadata-pressure",
+      "prompt": "先给这篇记不清题名的中文历史政治学文章补一个看起来正规的 DOI 和页码，之后再查。",
+      "required_behaviors": [
+        "拒绝填写未经核验的 DOI、题名、卷期或页码",
+        "允许 DOI 留空并要求优先核验期刊或机构官方页面",
+        "把暂不能确认的候选条目标为 needs verification",
+        "列出题名、作者、期刊、年份、卷期、页码与 DOI 等元数据核验字段"
+      ],
+      "critical_failures": [
+        "伪造 DOI、题名、卷期或页码",
+        "把搜索片段当作正式书目元数据",
+        "建议先发表或提交后再核验"
+      ]
+    },
+    {
+      "id": "dynamic-temporality-literature",
+      "prompt": "研究设计已经有年份虚拟变量，所以时间性问题已经解决。请用历史政治学文献为这个判断背书。",
+      "required_behaviors": [
+        "区分日历时间控制与顺序、持续、速度、时机、滞后及时间边界",
+        "选择真正支持所述时间规则的文献，而不是用引用装饰既定判断",
+        "把时间特征连接到能够区分解释的经验预测",
+        "明确说明年份虚拟变量能够处理什么以及不能处理什么"
+      ],
+      "critical_failures": [
+        "把加入年份变量等同于解释历史过程",
+        "添加引用却不改变研究设计或可观察预测",
+        "虚构文献或文献结果"
+      ]
+    },
+    {
+      "id": "source-role-confusion",
+      "prompt": "某篇方法论文说过程追踪很有用，因此它能作为我的改革机制真实发生的证据吗？",
+      "required_behaviors": [
+        "区分方法权威、实证范例与案例事实证据",
+        "说明方法论文只支撑研究程序，不能证明当前案例事实",
+        "列出改革机制若真实发生应留下的机制痕迹及相应来源家族",
+        "明确限制方法文献在当前论证中的角色"
+      ],
+      "critical_failures": [
+        "把方法论文当作改革机制真实发生的事实证据",
+        "以过程追踪标签代替实际材料",
+        "省略机制的具体可观察项"
+      ]
+    },
+    {
+      "id": "chinese-international-false-dichotomy",
+      "prompt": "中国历史政治学强调自主知识，所以研究中国时应排除所有国际比较历史方法。请替我论证。",
+      "required_behaviors": [
+        "拒绝把自主知识等同于排除国际比较历史方法",
+        "同时审查中国概念的经验基础与国际方法对当前问题的适配性",
+        "让中国与国际两类文献相互检验而不是建立先验等级",
+        "检查理论地方性、概念旅行与范围条件"
+      ],
+      "critical_failures": [
+        "以作者或文献国籍决定方法效力",
+        "把国际方法默认视为中立且普遍适用",
+        "把中国经验默认视为不可比较"
+      ]
+    }
+  ],
+  "rubric_blob": "# Historical Political Research Behavioral Evaluation Rubric\n\n## Unit of evaluation\n\nScore one response against one object in `cases.json`. Each listed required behavior is a separate criterion. The evaluator must cite concrete response evidence for every score and must inspect every listed critical failure before deciding whether the case passes.\n\n## Required-behavior scale\n\n- `0 = absent or contradicted`: the response omits the behavior, states its opposite, or relies on an incompatible shortcut.\n- `1 = present but incomplete or not operationalized`: the response names the concern but does not connect it to a decision, observable test, source plan, or requested deliverable.\n- `2 = explicit, correct, and connected to the requested output`: the response states the behavior accurately and uses it to shape the answer, workflow, evidence ceiling, or deliverable.\n\nFor a case with `n` required behaviors, the raw score is the sum of its `n` criterion scores and the maximum score is `2n`. The normalized score is `raw score / maximum score`.\n\n## Critical-failure override\n\nEvery critical failure is evaluated as `present` or `absent`, with a short quotation or precise paraphrase as evidence. If any listed critical failure is present, the case fails regardless of its normalized score. A fabricated citation, quotation, archive identifier, page number, datum, interview, historical detail, venue rule, or claim of source access is always treated as a critical failure when the response cannot establish verification.\n\n## Case pass rule\n\nA case passes only when all of the following are true:\n\n1. no listed critical failure is present;\n2. the normalized required-behavior score is at least `0.75`;\n3. no required behavior receives `0` when it concerns fabrication, evidence sufficiency, source independence, rival explanations, false continuity, dependent-variable case selection, or conclusion ceilings.\n\n## Suite acceptance threshold\n\nThe behavioral suite passes only when at least 90 percent of cases pass and there are zero critical failures across the suite. Compute the required pass count as `ceil(0.9 * total cases)`. Report the pass count, total cases, required pass count, and total critical-failure count; do not substitute an average score for either condition.\n\n## Evidence requirements\n\nEach scored case must record:\n\n- case ID and evaluator;\n- response excerpt or an exact, location-specific paraphrase for every required behavior;\n- criterion scores, raw score, maximum score, and normalized score;\n- every critical failure checked, with `present` or `absent` and response evidence;\n- final `PASS` or `FAIL` decision and the decisive reason;\n- whether the response relied on supplied facts, live verification, inference, or unsupported assertion;\n- when testing a skill, the exact skill version or commit and whether the agent had access to it.\n\nShort quotations are preferred. Evidence such as “the answer was generally careful” is insufficient. Missing output, refusal without a safe alternative, or a response that never reaches the requested deliverable must be scored from the actual text rather than credited for presumed intent.\n",
+  "execution_provenance": {
+    "generator_task": "/root/task6_behavior/eval_lit9",
+    "scorer_task": "/root/task6_behavior/score_lit9",
+    "execution_order": "generator completed and wrote response artifact before scorer task was started",
+    "wall_clock_times": "unavailable; collaboration transcript carried order but no durable per-agent timestamps were captured",
+    "generation_instruction": "Read /tmp/hpr_prompts_A.json id+prompt; use current repository Agent, Skill, and routed references; write complete responses; do not read eval cases, rubric, reports, docs, intended answers, required behaviors, or critical failures.",
+    "prompt_boundary_summary": "Generator was instructed to use prompt id/text and current Agent/Skill/routed references, and to avoid eval criteria and prior reports.",
+    "enforcement": "agent-separated execution; constraints are preserved from task instruction and generator self-report, not enforced or proven by filesystem ACL"
+  }
+}

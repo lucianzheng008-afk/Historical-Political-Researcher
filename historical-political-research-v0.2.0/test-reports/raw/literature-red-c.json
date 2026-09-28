@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.1",
+  "run": {
+    "run_id": "literature-red-full-v0.1-c",
+    "generator_identity": "/root/task1_red_baseline/red_full_c",
+    "runtime_identity": "historical_politics_researcher role; exact model identifier not exposed",
+    "scorer_identity": "/root/task1_red_baseline",
+    "skill_version": "0.1.0",
+    "production_commit": "3ec6c1f7eb2690555d33cc6b6b094dc99469b674",
+    "case_revision_commit": "ca351e3499337ef3e98aa3e70da873bb571c0f3a",
+    "cases_blob": "b683f966aaac0f036914a8d100a6d4a200fdb081",
+    "scoring_rubric_blob": "f472b30cbf102613c9fad98600f722592f082295",
+    "prompt_count": 3,
+    "allowed_production_scope": ["SKILL.md", "agent/historical_politics_researcher.toml", "references/", "assets/templates/", "production scripts routed by the Skill"],
+    "generator_instruction_constraints": "The generator was instructed to use the complete normal production resources at commit 3ec6c1f, not to inspect evals, test reports, design or implementation plans, post-3ec6c1f diffs, proposed v0.2 resources, or new literature lists, and not to self-score. These are prompt-level constraints, not filesystem ACL claims.",
+    "network_policy": "No network search was used; this run measures the packaged v0.1 resource baseline.",
+    "scoring_rubric": "evals/rubric.md"
+  },
+  "cases": [
+    {
+      "id": "dynamic-temporality-literature",
+      "prompt": "研究设计已经有年份虚拟变量，所以时间性问题已经解决。请用历史政治学文献为这个判断背书。",
+      "response": "不能用历史政治学文献为“加入年份虚拟变量就解决了时间性问题”背书。来源支持：年份虚拟变量至多吸收同一年作用于各观察单位的共同冲击。历史政治学所说的时间性则包括起点如何确定、事件次序、作用时滞、关键节点、制度载体、反馈、自我强化以及中断、转换和替代。Pierson 关于政治时间与路径依赖的研究、Capoccia 与 Kelemen 关于关键节点和反事实的研究，以及 Mahoney 与 Thelen 关于制度变迁的研究，都是包内列出的相关方法文献。它们指向的不是给回归式增加时间标签，而是把时间写入因果解释。具体机制至少应表述为：在既定前提下，某一触发事件使特定行动者采取行动，改变制度状态，经过可说明的时滞和载体产生反馈，进而影响结果。最强 rival 是一个并无历史机制、只有同期共同冲击或一般趋势的解释；年份虚拟变量可以帮助处理这一 rival 的一部分，却不能检验行动次序和生产性连接。可证伪观察包括：所谓关键节点前已经出现结果、颠倒事件次序仍得到同样结果、必要载体从未建立，或中断之后结果仍按相同方式发展。适用范围也应限定：若研究目标只是估计控制共同年份冲击后的条件相关关系，年份虚拟变量是有用的；若目标是声称某种历史机制、路径依赖或制度遗产真实发挥作用，它远远不够。结论上限只能是“模型控制了共同年份冲击”，不能写成“时间性问题已经解决”。未知与核验要求：本次仅依据包内方法综述和书目状态作答；正式写入论文前，仍须核验上述著作的全文、版本和对应论述，不能补造页码。",
+      "required_behavior_scores": [
+        {"criterion": "区分日历时间控制与顺序、持续、速度、时机、滞后及时间边界", "score": 1, "evidence": "区分共同年份冲击、起点、次序、时滞、关键节点和中断，但没有明确处理持续、速度或 tempo。"},
+        {"criterion": "选择真正支持所述时间规则的文献，而不是用引用装饰既定判断", "score": 2, "evidence": "选择 Pierson、Capoccia 与 Kelemen、Mahoney 与 Thelen，并分别连接政治时间、关键节点反事实和制度变迁规则，同时标注全文待核。"},
+        {"criterion": "把时间特征连接到能够区分解释的经验预测", "score": 2, "evidence": "提出结果早于节点、颠倒次序、载体缺失和中断后结果不变等区分性观察。"},
+        {"criterion": "明确说明年份虚拟变量能够处理什么以及不能处理什么", "score": 2, "evidence": "说明其可吸收共同年度冲击，但不能检验行动次序和生产性连接。"}
+      ],
+      "raw_score": 7,
+      "maximum_score": 8,
+      "normalized_score": 0.875,
+      "critical_failure_checks": [
+        {"failure": "把加入年份变量等同于解释历史过程", "present": false, "evidence": "明确拒绝这一等同。"},
+        {"failure": "添加引用却不改变研究设计或可观察预测", "present": false, "evidence": "文献规则改变了机制表述、rival 和可证伪观察。"},
+        {"failure": "虚构文献或文献结果", "present": false, "evidence": "只使用包内既有方法锚点并披露全文待核，未提供页码。"}
+      ],
+      "evidence_basis": "Named anchors came from the packaged v0.1 bibliography and method overview; claims were limited to their routed methodological role and marked for full-text verification.",
+      "decision": "PASS",
+      "decisive_reason": "7/8 and no critical failure; duration and tempo remain incomplete."
+    },
+    {
+      "id": "source-role-confusion",
+      "prompt": "某篇方法论文说过程追踪很有用，因此它能作为我的改革机制真实发生的证据吗？",
+      "response": "不能。方法论文说明过程追踪可以怎样检验机制，属于研究设计依据，不是你的改革过程中某个机制真实发生的经验材料。来源支持：包内列出的 Collier、Mahoney、Bennett 与 Checkel、Beach 与 Pedersen 等文献可用于界定过程追踪、机制检验和证据诊断，但它们不能观察你的改革行动者、决策或制度变化。你的经验主张应拆成可检验步骤，例如：改革倡议进入组织议程，特定行动者据此改变授权或资源配置，执行部门随后改变行为，最终产生结果。每一步都要寻找相应的同期会议记录、指令、预算或人员变化、执行记录、通信、访谈或其他物质痕迹，并审计其形成目的、接近事件的程度、来源依赖和缺失机制。最强 rival 可以是外部压力、既有官僚利益或资源变化直接造成改革结果；还要考虑证据生成 rival，例如事后总结为了邀功而把零散行动重写成连贯机制。可证伪观察包括：关键行动发生在所称原因之前、必要授权并未传递、执行单位没有相应状态变化，或 rival 对同一材料的预测更强。若目前只有方法论文，机制主张应标为 UNTESTED、推断强度为 UNSUPPORTED；它最多支持“应采用过程追踪检验该机制”，不能支持“该机制已经发生”。只有在必要机制步骤得到相互独立且具有诊断力的经验来源支持，并且 serious rival 接受对称检验后，结论才可能提升为“该机制在这个案例和限定时期内运作”。未知与核验要求：尚未提供改革案例、时期或经验材料，因此现在只能给出验证设计，不能给出机制发现；正式引用方法论文时仍须核验全文和准确页码。",
+      "required_behavior_scores": [
+        {"criterion": "区分方法权威、实证范例与案例事实证据", "score": 1, "evidence": "明确区分方法论文和当前案例事实证据，但没有单独识别实证范例这一第三种角色。"},
+        {"criterion": "说明方法论文只支撑研究程序，不能证明当前案例事实", "score": 2, "evidence": "将方法论文严格限定为研究设计和证据诊断依据。"},
+        {"criterion": "列出改革机制若真实发生应留下的机制痕迹及相应来源家族", "score": 2, "evidence": "列出议程、授权资源、执行行为与结果步骤，并对应会议记录、指令、预算、人事、执行记录、通信和访谈。"},
+        {"criterion": "明确限制方法文献在当前论证中的角色", "score": 2, "evidence": "把方法文献的角色限定为说明应如何检验，不能证明机制发生。"}
+      ],
+      "raw_score": 7,
+      "maximum_score": 8,
+      "normalized_score": 0.875,
+      "critical_failure_checks": [
+        {"failure": "把方法论文当作改革机制真实发生的事实证据", "present": false, "evidence": "明确拒绝。"},
+        {"failure": "以过程追踪标签代替实际材料", "present": false, "evidence": "要求与每个机制步骤对应的独立经验材料。"},
+        {"failure": "省略机制的具体可观察项", "present": false, "evidence": "给出步骤、痕迹和可证伪观察。"}
+      ],
+      "evidence_basis": "Method anchors came from packaged v0.1 resources; no reform fact was asserted without case evidence.",
+      "decision": "PASS",
+      "decisive_reason": "7/8 and no critical failure; the response does not explicitly distinguish an empirical exemplar from method authority and case evidence."
+    },
+    {
+      "id": "chinese-international-false-dichotomy",
+      "prompt": "中国历史政治学强调自主知识，所以研究中国时应排除所有国际比较历史方法。请替我论证。",
+      "response": "不能替这一排除性判断论证，因为它把“自主知识”误写成了方法封闭。来源支持：包内对中国历史政治学资源的综合把理论地方性和“中国作为方法”界定为研究提示，即追问理论产生于何种历史经验、隐藏了哪些国家形态和社会结构假设，并用中国经验生成或修正概念；同一资源同时明确，理论的历史来源本身既不能证明也不能否定其有效性，外国来源不等于无效。包内书目还把杨光斌所代表的论述定位为一个研究纲领，而非全领域的唯一正典，并将比较历史分析、历史制度主义、过程追踪、概念形成和来源批判列为支持、修正与批评它的工具。更可辩护的 puzzle 不是“国际方法还是中国方法”，而是“某一比较方法或概念在进入中国历史经验后，哪些隐含条件仍成立，哪些需要限定或改写”。相应的时间机制应考察概念和方法如何被翻译、由哪些学术或制度载体传播、在何种历史条件下发生含义或测量变化。两个对称 rivals 分别是无条件套用国际理论和因其来源于国外而先验排除；前者可能造成概念错置，后者则会取消可比较性并使本土论断免于反证。可证伪标准也应对称：若一种国际比较方法在概念等值、证据可比和范围条件明确的情况下能够区分 rival 并解释中国经验，仅凭其来源无法排除它；若其核心行动者假设、制度单位或测量指标在中国材料中持续失效，则应限定、修正或拒绝具体理论，而不是一并排除所有比较方法。适用范围上还要区分“方法”与“实体理论”：结构化聚焦比较等推理程序可以跨案例使用，具体概念和因果命题则必须接受理论地方性审计。结论上限因此是：自主知识要求以中国经验检验、生成和修正理论，并与国际方法进行受控对话；它不支持排除所有国际比较历史方法。未知与核验要求：包内有关杨光斌及相关中文文献的依据主要来自已检查的用户提供 OCR 和书目信息，正式发表前仍需核验原书、期刊记录和准确引文。",
+      "required_behavior_scores": [
+        {"criterion": "拒绝把自主知识等同于排除国际比较历史方法", "score": 2, "evidence": "首句拒绝将自主知识写成方法封闭。"},
+        {"criterion": "同时审查中国概念的经验基础与国际方法对当前问题的适配性", "score": 2, "evidence": "要求以中国经验审查隐含国家和社会假设，并检查概念等值、制度单位、指标和证据可比性。"},
+        {"criterion": "让中国与国际两类文献相互检验而不是建立先验等级", "score": 2, "evidence": "将中国研究纲领与比较历史、历史制度主义、过程追踪和概念形成工具置于支持、修正与批评关系中。"},
+        {"criterion": "检查理论地方性、概念旅行与范围条件", "score": 2, "evidence": "明确讨论理论地方性、概念翻译、测量变化、范围限定和理论修正。"}
+      ],
+      "raw_score": 8,
+      "maximum_score": 8,
+      "normalized_score": 1.0,
+      "critical_failure_checks": [
+        {"failure": "以作者或文献国籍决定方法效力", "present": false, "evidence": "明确说来源本身不能决定效力。"},
+        {"failure": "把国际方法默认视为中立且普遍适用", "present": false, "evidence": "要求审查隐含假设、概念等值、证据可比和适用范围。"},
+        {"failure": "把中国经验默认视为不可比较", "present": false, "evidence": "主张受控比较和双向修正。"}
+      ],
+      "evidence_basis": "The response used the packaged Chinese foundations and comparative-method references, while disclosing the OCR and bibliographic verification ceiling.",
+      "decision": "PASS",
+      "decisive_reason": "8/8 and no critical failure."
+    }
+  ],
+  "suite": {
+    "pass_count": 3,
+    "total_cases": 3,
+    "required_pass_count": 3,
+    "critical_failure_count": 0,
+    "decision": "PASS"
+  }
+}

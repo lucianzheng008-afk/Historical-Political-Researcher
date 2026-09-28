@@ -1,0 +1,16 @@
+{
+  "project_id": "HPR-NEW",
+  "task": "",
+  "target_output": "research design",
+  "language": "zh-CN",
+  "deadline": "",
+  "word_limit": "",
+  "venue": "",
+  "citation_style": "",
+  "known_cases": [],
+  "time_scope": "",
+  "available_sources": [],
+  "allowed_search": "user-provided and lawful public sources",
+  "uncertainty_policy": "Separate source-backed claims, inference, and unknown or needs verification",
+  "conclusion_ceiling": "design only until evidence is registered"
+}

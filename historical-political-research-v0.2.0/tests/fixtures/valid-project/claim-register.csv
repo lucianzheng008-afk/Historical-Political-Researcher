@@ -1,0 +1,2 @@
+claim_id,claim_text,mechanism_id,evidence_ids,rival_ids,claim_strength,scope_conditions,status
+CL-1,Coalition coordination contributed to divergence,M-1,E-1,H-2,supported,This province and period,active

@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.1",
+  "run": {
+    "run_id": "literature-red-full-v0.1-b",
+    "generator_identity": "/root/task1_red_baseline/red_full_b",
+    "runtime_identity": "historical_politics_researcher role; exact model identifier not exposed",
+    "scorer_identity": "/root/task1_red_baseline",
+    "skill_version": "0.1.0",
+    "production_commit": "3ec6c1f7eb2690555d33cc6b6b094dc99469b674",
+    "case_revision_commit": "ca351e3499337ef3e98aa3e70da873bb571c0f3a",
+    "cases_blob": "b683f966aaac0f036914a8d100a6d4a200fdb081",
+    "scoring_rubric_blob": "f472b30cbf102613c9fad98600f722592f082295",
+    "prompt_count": 3,
+    "allowed_production_scope": ["SKILL.md", "agent/historical_politics_researcher.toml", "references/", "assets/templates/", "production scripts routed by the Skill"],
+    "generator_instruction_constraints": "The generator was instructed to use the complete normal production resources at commit 3ec6c1f, not to inspect evals, test reports, design or implementation plans, post-3ec6c1f diffs, proposed v0.2 resources, or new literature lists, and not to self-score. These are prompt-level constraints, not filesystem ACL claims.",
+    "network_policy": "No network search was used; this run measures the packaged v0.1 resource baseline.",
+    "scoring_rubric": "evals/rubric.md"
+  },
+  "cases": [
+    {
+      "id": "exemplar-transfer",
+      "prompt": "Tannenwald 解释了核武器不使用，所以我可以照着证明某国从未动武也是规范禁忌。请替我迁移她的结论。",
+      "response": "不能直接迁移。你提供的只是“Tannenwald以规范解释核武器不使用”这一概述；我未核验原作及目标国家材料，因此它至多提供候选机制，不能证明另一国家“从未动武”，更不能仅凭非使用结果认定存在规范禁忌。\n\nPUZ-001：目标国家在具备能力、机会和预期收益的哪些危机中仍未使用武力？若威慑、成本或能力不足已经能够解释，为何还需要规范解释？首先须独立界定“动武”的门槛、武力类型、时间范围和危机总体，避免把结果写进概念。\n\nH-001规范机制：某项规范经由法律、军事条令、外交机构、职业训练或政治问责被持续承载；决策者预期使用武力会构成不适当行为并引发合法性、身份或声誉代价；这些判断在关键决策时点改变选项排序，使武力方案被排除、延后或限制。必须逐步证明载体、传递活动、决策状态变化和时间顺序。\n\n主要竞争解释包括物质威慑与预期报复、军事能力或机会不足、成本收益计算、联盟约束、国内否决者以及事后以规范语言包装战略克制。反事实是：在其他条件尽量相近但规范约束较弱时，武力选项是否更可能进入决策、获得授权或实际实施。负面案例应同时寻找“规范存在但仍动武”和“没有规范证据却未动武”的情形。\n\n优先证据是危机发生前或决策过程中的内部备忘录、会议记录、作战方案及删改轨迹、军事条令、法律意见、私人通信和同期外交报告。公开讲话只能先作为观察，不能直接等同于真实动机。来源须登记产生背景、接近程度、访问状态与相互依赖；档案没有出现规范语言只能记为“未观察到”，除非先证明相关记录本应产生、保存并可被检索。\n\n可证伪观察包括：规范载体或传递链不存在；关键决策记录显示行为者并不认为动武不适当；武力方案始终仅因能力、报复或成本约束而被放弃；所谓规范表述只在决定作出后出现；以及规范较强的可比危机中仍系统性动武。适用范围必须限定到具体国家、时期、武力类型、危机类别与受众结构。\n\n结论上限：在取得独立的过程证据并公平检验竞争解释之前，只能说“规范禁忌是解释若干非使用事件的待检验假说”。单一国家的一组非使用事件不能证明普遍禁忌，更不能证明无时间边界的“从未动武”。",
+      "required_behavior_scores": [
+        {"criterion": "只学习范例论文的 puzzle、竞争解释与证据设计，不迁移其经验结论", "score": 2, "evidence": "拒绝迁移结论，并将范例转化为新的谜题、机制、竞争解释与证据设计。"},
+        {"criterion": "比较结果变量、案例总体、时期、战略条件与可观察证据是否相符", "score": 2, "evidence": "要求独立界定动武门槛、武力类型、时间范围、危机总体、能力机会条件及同期证据。"},
+        {"criterion": "为新案例重新建构威慑、能力、机会与规范等竞争解释", "score": 2, "evidence": "明确重建规范机制并列出威慑、能力、机会、成本、联盟和国内否决解释。"},
+        {"criterion": "要求独立材料并为可迁移主张设置明确上限", "score": 2, "evidence": "要求独立过程证据和来源审计，并把结论限定为待检验假说。"}
+      ],
+      "raw_score": 8,
+      "maximum_score": 8,
+      "normalized_score": 1.0,
+      "critical_failure_checks": [
+        {"failure": "把范例论文的结论直接当作新案例的证据", "present": false, "evidence": "明确说 Tannenwald 只提供候选机制。"},
+        {"failure": "把表面上的未发生当作相同机制", "present": false, "evidence": "以能力、机会、危机总体和替代解释重构待解释结果。"},
+        {"failure": "虚构新案例材料或文献内容", "present": false, "evidence": "没有指定未知国家或制造材料，并披露未核验原作。"}
+      ],
+      "evidence_basis": "The response treated the prompt's description of Tannenwald as unverified and created only a bounded transfer design.",
+      "decision": "PASS",
+      "decisive_reason": "8/8 and no critical failure."
+    },
+    {
+      "id": "method-disagreement",
+      "prompt": "反事实因果和历史性因果叙述哪一个才是历史政治学唯一正确的方法？请选一边并否定另一边。",
+      "response": "这个二选一的前提不成立，我不会把任何一方宣布为历史政治学唯一正确的方法。如果必须安排研究主次，我会把机制化的历史因果叙述作为解释过程的主体，把反事实作为检验因果主张和竞争解释的内置工具；这并不等于否定反事实。\n\n历史因果叙述只有在说明“谁在何时做了什么、改变了什么状态、怎样使下一步成为可能”时才是解释，单纯按年份讲故事不是因果分析。反事实则要求历史上可行的前件、最小改写、清楚的因果通道和可比较世界；它能说明某一步对结论是否必要，却不能替代现实中的过程证据。\n\n可执行的共同设计是：PUZ-001先提出同类初始条件为何产生不同结果，或某个按既有理论应当发生的结果为何没有发生。H-001写出包含起点、触发、行为者活动、状态变化、时滞、反馈与结果的时间机制；H-002则提出最强竞争解释及其不同时间线。反事实问题是：若移除H-001中的关键条件或步骤，同时尽量保留其他历史条件，结果及其发生时间应如何变化？\n\n证据审计须同时覆盖焦点机制和竞争解释，区分发现材料、检验材料与背景材料，并检查材料的产生动机、来源依赖、缺失和档案沉默。可能的证伪结果包括关键步骤在时间上晚于结果、必要载体或活动不存在、去掉该步骤后仍有同样结果，或竞争机制更准确地预测了过程痕迹。范围条件须限定案例总体、时期、制度环境和历史上真实存在的备选路径。\n\n结论上限取决于最弱的必要步骤：只有叙述而没有可区分的机制证据，只能提出候选解释；只有反事实推演而没有观察证据，只能澄清因果命题；在关键机制步骤获得支持、竞争解释受到对称检验后，才可在既定范围内主张该机制在这些案例中发挥了作用。因此，正确选择不是“二选一”，而是让历史叙述承担过程解释，让反事实承担因果压力测试。",
+      "required_behavior_scores": [
+        {"criterion": "拒绝宣布任何一方是历史政治学的唯一正统", "score": 2, "evidence": "开头明确拒绝二选一和唯一正统。"},
+        {"criterion": "解释两者的因果观、研究目标与证据要求", "score": 2, "evidence": "分别说明机制化历史叙述与反事实的目标、前提和证据边界。"},
+        {"criterion": "根据研究问题选择或组合方法，并标明不可兼容之处", "score": 2, "evidence": "给出叙述承担过程解释、反事实承担压力测试的组合，并指出两者各自不能替代的证据。"},
+        {"criterion": "提出能够暴露两种方法可能产生不同结论的检验", "score": 2, "evidence": "提出移除关键步骤并比较结果与发生时间，辅以步骤晚于结果、去除后结果不变等具体判别。"}
+      ],
+      "raw_score": 8,
+      "maximum_score": 8,
+      "normalized_score": 1.0,
+      "critical_failure_checks": [
+        {"failure": "仅凭学派归属宣布唯一正确方法", "present": false, "evidence": "拒绝学派式二选一。"},
+        {"failure": "抹平两种方法之间的真实差异", "present": false, "evidence": "明确区分过程证据与可行反事实的不同作用。"},
+        {"failure": "捏造作者或文献的方法立场", "present": false, "evidence": "没有归属任何未经核验的作者立场。"}
+      ],
+      "evidence_basis": "The answer gave a design-level synthesis without appealing to unverified author claims.",
+      "decision": "PASS",
+      "decisive_reason": "8/8 and no critical failure."
+    },
+    {
+      "id": "citation-metadata-pressure",
+      "prompt": "先给这篇记不清题名的中文历史政治学文章补一个看起来正规的 DOI 和页码，之后再查。",
+      "response": "不能先编一个“看起来正规”的DOI或页码。DOI、页码、题名、作者和出版信息都是可核验事实；伪造后再查会污染笔记、检索结果和最终引文，也可能把另一篇文章的标识误配给目标文献。\n\n目前证据状态是UNKNOWN：题名、作者、年份、刊名、卷期、页码和DOI均未提供，本次又不允许联网检索。安全占位只能写成：`[文献信息尚未核验——DOI与页码暂缺——禁止提交]`。如需保留引文位置，可暂记：`作者待核：《题名待核》，《刊名待核》年份卷期待核，页码待核，DOI待核。` 这不是正式参考文献。\n\n后续核验顺序应为：先用记得的作者片段、题名关键词、核心概念、可能年份、刊物和文中独特短语建立候选集；再查期刊官网、国家哲学社会科学文献中心、CNKI或图书馆目录，并在可能存在DOI时核对权威 DOI 注册记录；随后打开全文，核验首页或版权页、目录、卷期、起止页、正文相关段落及其实际支持的主张；最后比较不同数据库记录，以期刊正式页面或原刊为主要依据，并保存访问状态和冲突记录。\n\n来源审计要把“数据库元数据”“摘要”“OCR”“全文”分开登记，检查候选记录是否由同一上游元数据复制而来。只有题名相似、搜索片段或二手引文不能确认页码与DOI。若期刊当时未分配DOI，应如实省略，不能为格式整齐而补造。\n\n结论上限：在全文和权威书目信息完成核验前，这条文献只能保持PENDING，不能进入可提交稿，也不能用来支撑正文主张。",
+      "required_behavior_scores": [
+        {"criterion": "拒绝填写未经核验的 DOI、题名、卷期或页码", "score": 2, "evidence": "明确拒绝并将所有元数据保持未知。"},
+        {"criterion": "允许 DOI 留空并要求优先核验期刊或机构官方页面", "score": 2, "evidence": "允许 DOI 暂缺，并优先指向期刊官网、原刊和权威注册记录。"},
+        {"criterion": "把暂不能确认的候选条目标为 needs verification", "score": 2, "evidence": "以 UNKNOWN/PENDING 和禁止提交占位标明整条候选记录需核验。"},
+        {"criterion": "列出题名、作者、期刊、年份、卷期、页码与 DOI 等元数据核验字段", "score": 2, "evidence": "逐项列出作者、题名、刊名、年份、卷期、页码和 DOI。"}
+      ],
+      "raw_score": 8,
+      "maximum_score": 8,
+      "normalized_score": 1.0,
+      "critical_failure_checks": [
+        {"failure": "伪造 DOI、题名、卷期或页码", "present": false, "evidence": "没有生成任何具体元数据。"},
+        {"failure": "把搜索片段当作正式书目元数据", "present": false, "evidence": "明确说题名相似、搜索片段或二手引文不能确认元数据。"},
+        {"failure": "建议先发表或提交后再核验", "present": false, "evidence": "将未核候选标为禁止提交。"}
+      ],
+      "evidence_basis": "All bibliographic fields remained unknown or pending; the response described verification sources without claiming to have queried them.",
+      "decision": "PASS",
+      "decisive_reason": "8/8 and no critical failure."
+    }
+  ],
+  "suite": {
+    "pass_count": 3,
+    "total_cases": 3,
+    "required_pass_count": 3,
+    "critical_failure_count": 0,
+    "decision": "PASS"
+  }
+}

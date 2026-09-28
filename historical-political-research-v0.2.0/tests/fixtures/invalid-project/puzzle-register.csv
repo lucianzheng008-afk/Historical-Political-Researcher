@@ -1,0 +1,2 @@
+puzzle_id,observation,expected,observed,theoretical_stake,evidence_status
+PUZ-1,Policy succeeded,Unknown,Success,Claims universality,unknown
